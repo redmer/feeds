@@ -1,6 +1,6 @@
 [kgg]
 title = "The Knowledge Graph Guys?"
 url = "https://www.knowledge-graph-guys.com/blog"
-entrySelector = ".content > article"
+entrySelector = ".content article"
 titleSelector = "h1 a"
 linkSelector = "h1 a"
