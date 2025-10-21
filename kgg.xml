@@ -2,7 +2,1271 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.knowledge-graph-guys.com/blog</id>
     <title>The Knowledge Graph Guys?</title>
-    <updated>2025-10-21T15:01:19.101Z</updated>
+    <updated>2025-10-21T15:09:16.456Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/5e9184da-bd76-4390-8f1f-0a219414c91a/favicon.ico?format=100w</icon>
+    <entry>
+        <title type="html"><![CDATA[The Swiss Cheese Problem: Why AI Agents Need Symbolic Backbone]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/the-swiss-cheese-problem-why-ai-agents-need-symbolic-backbone</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/the-swiss-cheese-problem-why-ai-agents-need-symbolic-backbone"/>
+        <updated>2025-10-21T15:09:15.262Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/the-swiss-cheese-problem-why-ai-agents-need-symbolic-backbone" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png" data-image-dimensions="1024x904" data-image-focal-point="0.5,0.5" alt="The Swiss Cheese Problem: Why AI Agents Need Symbolic Backbone" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png" width="1024" height="904" sizes="(max-width:767px)169.91150442477877vw,84.95575221238938vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759336006190-2LV3VIP5H70WVO5IWO0S/the-swiss-cheese-problem.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Artificial+Intelligence" class="blog-categories">Artificial Intelligence</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">26/09/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Artificial+Intelligence" class="blog-categories">Artificial Intelligence</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">26/09/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/the-swiss-cheese-problem-why-ai-agents-need-symbolic-backbone" data-no-animation="">
+  
+    The Swiss Cheese Problem: Why AI Agents Need Symbolic Backbone
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">AI agents show superhuman skill yet still fail in simple ways — a paradox known as the “Swiss cheese problem.” The solution lies in neuro-symbolic integration: combining neural networks’ creativity with the rigour of symbolic logic. Knowledge Graphs provide the missing backbone enterprises need for reliable, trustworthy AI.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/the-swiss-cheese-problem-why-ai-agents-need-symbolic-backbone" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why Early Knowledge Graph Adopters Will Win the AI Race]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/why-early-knowledge-graph-adopters-will-win-the-ai-race</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/why-early-knowledge-graph-adopters-will-win-the-ai-race"/>
+        <updated>2025-10-21T15:09:15.264Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/why-early-knowledge-graph-adopters-will-win-the-ai-race" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg" data-image-dimensions="1024x1024" data-image-focal-point="0.5,0.5" alt="Why Early Knowledge Graph Adopters Will Win the AI Race" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg" width="1024" height="1024" sizes="(max-width:767px)150vw,75vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759334521751-NLWH8SPU6ZBX8F3ATZQV/climbers.jpeg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Enterprise+AI" class="blog-categories">Enterprise AI</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">19/09/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Enterprise+AI" class="blog-categories">Enterprise AI</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">19/09/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/why-early-knowledge-graph-adopters-will-win-the-ai-race" data-no-animation="">
+  
+    Why Early Knowledge Graph Adopters Will Win the AI Race
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Knowledge graphs are moving from niche to mainstream. Early adopters who embrace ontologies and semantic layers are already seeing measurable business impact. Here’s guidance for building your own successful knowledge graph.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/why-early-knowledge-graph-adopters-will-win-the-ai-race" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spec-First Development: Why LLMs Thrive on Structure, Not Vibes]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/vibes-vs-spec-first-development</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/vibes-vs-spec-first-development"/>
+        <updated>2025-10-21T15:09:15.265Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/vibes-vs-spec-first-development" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg" data-image-dimensions="1024x904" data-image-focal-point="0.5,0.5" alt="Spec-First Development: Why LLMs Thrive on Structure, Not Vibes" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg" width="1024" height="904" sizes="(max-width:767px)169.91150442477877vw,84.95575221238938vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759319654769-73H0AB0EXDFYY1Y7XXYB/spec-first-dev.jpeg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Agentic+AI" class="blog-categories">Agentic AI</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">12/09/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Agentic+AI" class="blog-categories">Agentic AI</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">12/09/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/vibes-vs-spec-first-development" data-no-animation="">
+  
+    Spec-First Development: Why LLMs Thrive on Structure, Not Vibes
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Vibe coding has its thrills, but LLMs shine when paired with formal specifications. Learn how test-driven practices, ontologies, and knowledge graphs turn ambiguity into executable, structured intent.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/vibes-vs-spec-first-development" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Context Rot: Why Bigger Context Windows Aren’t the Answer for Retrieval]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/context-rot</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/context-rot"/>
+        <updated>2025-10-21T15:09:15.270Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/context-rot" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png" data-image-dimensions="992x1056" data-image-focal-point="0.5,0.5" alt="Context Rot: Why Bigger Context Windows Aren’t the Answer for Retrieval" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png" width="992" height="1056" sizes="(max-width:767px)140.9090909090909vw,70.45454545454545vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759318985752-7IZK70Q1I8P8DM6C211V/context-rot2.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/LLMs" class="blog-categories">LLMs</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">05/09/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/LLMs" class="blog-categories">LLMs</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">05/09/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/context-rot" data-no-animation="">
+  
+    Context Rot: Why Bigger Context Windows Aren’t the Answer for Retrieval
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Bigger context windows don’t automatically improve retrieval. Real gains come from reasoned, precise context—structured and guided by ontologies and knowledge graphs.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/context-rot" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The GenAI Divide: Why 95% of Enterprise AI Pilots Fail]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/the-genai-divide-why-95-of-enterprise-ai-pilots-fail</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/the-genai-divide-why-95-of-enterprise-ai-pilots-fail"/>
+        <updated>2025-10-21T15:09:15.270Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/the-genai-divide-why-95-of-enterprise-ai-pilots-fail" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg" data-image-dimensions="602x492" data-image-focal-point="0.5,0.5" alt="The GenAI Divide: Why 95% of Enterprise AI Pilots Fail" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg" width="602" height="492" sizes="(max-width:767px)183.53658536585365vw,91.76829268292683vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759316791709-9CIGQA49PTFRFR2BNVO7/mit.jpeg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Enterprise+AI" class="blog-categories">Enterprise AI</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">29/08/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Enterprise+AI" class="blog-categories">Enterprise AI</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">29/08/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/the-genai-divide-why-95-of-enterprise-ai-pilots-fail" data-no-animation="">
+  
+    The GenAI Divide: Why 95% of Enterprise AI Pilots Fail
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">95% of enterprise GenAI pilots fail—but it’s not the models’ fault. The winners connect data, enforce clear semantics, and wrap LLMs in formal ontologies for trustworthy, validated AI.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/the-genai-divide-why-95-of-enterprise-ai-pilots-fail" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Integration Isn’t Optional: Why AI-Ready Data Needs URIs and Ontologies]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/integration-isnt-optional-why-ai-ready-data-needs-uris-and-ontologies</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/integration-isnt-optional-why-ai-ready-data-needs-uris-and-ontologies"/>
+        <updated>2025-10-21T15:09:15.271Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/integration-isnt-optional-why-ai-ready-data-needs-uris-and-ontologies" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg" data-image-dimensions="1861x1780" data-image-focal-point="0.5,0.5" alt="Integration Isn’t Optional: Why AI-Ready Data Needs URIs and Ontologies" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg" width="1861" height="1780" sizes="(max-width:767px)156.82584269662922vw,78.41292134831461vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315816026-VV1Q4LOO6PKUIXXWHEGH/lump-under-rug.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Semantics" class="blog-categories">Semantics</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">22/08/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Semantics" class="blog-categories">Semantics</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">22/08/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/integration-isnt-optional-why-ai-ready-data-needs-uris-and-ontologies" data-no-animation="">
+  
+    Integration Isn’t Optional: Why AI-Ready Data Needs URIs and Ontologies
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">The Semantic Web isn’t the problem—distributed data integration is. For AI agents to act and reason effectively, organisations need clear semantics, stable URIs, and shared ontologies baked into their data products.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/integration-isnt-optional-why-ai-ready-data-needs-uris-and-ontologies" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Walmart’s SuperAgents: Why Semantics and Knowledge Graphs Are the Real Foundation]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/walmarts-superagents-why-semantics-and-knowledge-graphs-are-the-real-foundation</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/walmarts-superagents-why-semantics-and-knowledge-graphs-are-the-real-foundation"/>
+        <updated>2025-10-21T15:09:15.273Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/walmarts-superagents-why-semantics-and-knowledge-graphs-are-the-real-foundation" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png" data-image-dimensions="1024x1536" data-image-focal-point="0.5,0.5" alt="Walmart’s SuperAgents: Why Semantics and Knowledge Graphs Are the Real Foundation" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png" width="1024" height="1536" sizes="(max-width:767px)100vw,50vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315490440-IKAQ38PKBL5D1UXPC69A/super-agents.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/AI+Agents" class="blog-categories">AI Agents</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">15/08/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/AI+Agents" class="blog-categories">AI Agents</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">15/08/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/walmarts-superagents-why-semantics-and-knowledge-graphs-are-the-real-foundation" data-no-animation="">
+  
+    Walmart’s SuperAgents: Why Semantics and Knowledge Graphs Are the Real Foundation
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Walmart’s SuperAgents highlight the surface magic of AI orchestration. But the real value lies beneath: shared semantics, aligned ontologies, and a long-term investment in knowledge graphs that let agents coordinate reliably.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/walmarts-superagents-why-semantics-and-knowledge-graphs-are-the-real-foundation" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Revisiting the Neural-Symbolic Loop: GPT-5 and Ontologies in Tandem]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/revisiting-the-neural-symbolic-loop-gpt-5-and-ontologies-in-tandem</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/revisiting-the-neural-symbolic-loop-gpt-5-and-ontologies-in-tandem"/>
+        <updated>2025-10-21T15:09:15.275Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/revisiting-the-neural-symbolic-loop-gpt-5-and-ontologies-in-tandem" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg" data-image-dimensions="1536x1024" data-image-focal-point="0.5,0.5" alt="Revisiting the Neural-Symbolic Loop: GPT-5 and Ontologies in Tandem" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg" width="1536" height="1024" sizes="(max-width:767px)225vw,112.5vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759315013974-K850G5DTY4CQC46NU4B8/better-context-reinforcing-feedback-loop.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/LLMs" class="blog-categories">LLMs</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">08/08/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/LLMs" class="blog-categories">LLMs</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">08/08/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/revisiting-the-neural-symbolic-loop-gpt-5-and-ontologies-in-tandem" data-no-animation="">
+  
+    Revisiting the Neural-Symbolic Loop: GPT-5 and Ontologies in Tandem
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">With GPT-5, the synergy between LLMs and ontologies is clearer than ever. Larger context, multimodal input, and tool use let models help build ontologies — and ontologies, in turn, strengthen LLM reasoning, creating a self-reinforcing loop of improvement.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/revisiting-the-neural-symbolic-loop-gpt-5-and-ontologies-in-tandem" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Tables to Meaning: Building True Data Products with Ontologies]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/from-tables-to-meaning</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/from-tables-to-meaning"/>
+        <updated>2025-10-21T15:09:15.276Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/from-tables-to-meaning" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg" data-image-dimensions="1745x1658" data-image-focal-point="0.5,0.5" alt="From Tables to Meaning: Building True Data Products with Ontologies" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg" width="1745" height="1658" sizes="(max-width:767px)157.87092882991556vw,78.93546441495778vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759308111082-ZYHXMV4I09UBQPUI631D/dprod-sematic-layer1.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Semantics" class="blog-categories">Semantics</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">01/08/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Semantics" class="blog-categories">Semantics</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">01/08/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/from-tables-to-meaning" data-no-animation="">
+  
+    From Tables to Meaning: Building True Data Products with Ontologies
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">‘Semantics’ is often misused, yet it defines the very essence of meaning. Large Language Models hold a latent, globalised semantics — but not yours. True differentiation lies in owning your meaning through Knowledge Graphs and ontologies that reflect your reality, not the world’s average.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/from-tables-to-meaning" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Semantics Is Meaning: The Hidden Structure That Makes You Unique]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/semantics-is-meaning-the-hidden-structure-that-makes-you-unique</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/semantics-is-meaning-the-hidden-structure-that-makes-you-unique"/>
+        <updated>2025-10-21T15:09:15.279Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/semantics-is-meaning-the-hidden-structure-that-makes-you-unique" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png" data-image-dimensions="1024x1024" data-image-focal-point="0.5,0.5" alt="Semantics Is Meaning: The Hidden Structure That Makes You Unique" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png" width="1024" height="1024" sizes="(max-width:767px)150vw,75vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306852731-072OZKKHR1AJ7LIPMFX6/meaning-is-your-moat.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Semantics" class="blog-categories">Semantics</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">25/07/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Semantics" class="blog-categories">Semantics</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">25/07/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/semantics-is-meaning-the-hidden-structure-that-makes-you-unique" data-no-animation="">
+  
+    Semantics Is Meaning: The Hidden Structure That Makes You Unique
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">‘Semantics’ is often misused, yet it defines the very essence of meaning. Large Language Models hold a latent, globalised semantics — but not yours. True differentiation lies in owning your meaning through Knowledge Graphs and ontologies that reflect your reality, not the world’s average.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/semantics-is-meaning-the-hidden-structure-that-makes-you-unique" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Transduction to Abduction: Building Disciplined Reasoning in AI]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/from-transduction-to-abduction-building-disciplined-reasoning-in-ai</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/from-transduction-to-abduction-building-disciplined-reasoning-in-ai"/>
+        <updated>2025-10-21T15:09:15.280Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/from-transduction-to-abduction-building-disciplined-reasoning-in-ai" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png" data-image-dimensions="1024x1536" data-image-focal-point="0.5,0.5" alt="From Transduction to Abduction: Building Disciplined Reasoning in AI" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png" width="1024" height="1536" sizes="(max-width:767px)100vw,50vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759306434849-WJUZ6GTPKYALG5ZKTBXH/transduction-vs-abduction.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Artificial+Intelligence" class="blog-categories">Artificial Intelligence</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">18/07/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Artificial+Intelligence" class="blog-categories">Artificial Intelligence</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">18/07/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/from-transduction-to-abduction-building-disciplined-reasoning-in-ai" data-no-animation="">
+  
+    From Transduction to Abduction: Building Disciplined Reasoning in AI
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Large language models excel at transduction — drawing analogies across cases — and hint at induction, learning patterns from data. But true reasoning demands abduction: generating structured explanations. By pairing LLMs with ontologies and symbolic logic, organisations can move beyond fuzzy resemblance toward grounded, conceptual intelligence.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/from-transduction-to-abduction-building-disciplined-reasoning-in-ai" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fractured Intelligence: Why Order Still Matters in AI]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/fractured-intelligence-why-order-still-matters-in-ai</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/fractured-intelligence-why-order-still-matters-in-ai"/>
+        <updated>2025-10-21T15:09:15.282Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/fractured-intelligence-why-order-still-matters-in-ai" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png" data-image-dimensions="634x763" data-image-focal-point="0.5,0.5" alt="Fractured Intelligence: Why Order Still Matters in AI" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png" width="634" height="763" sizes="(max-width:767px)124.63958060288336vw,62.31979030144168vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305745915-7IJJRCDG7X4ASR0KBOR5/fractured-entangled-representation.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Knowledge+Graphs" class="blog-categories">Knowledge Graphs</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">11/07/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Knowledge+Graphs" class="blog-categories">Knowledge Graphs</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">11/07/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/fractured-intelligence-why-order-still-matters-in-ai" data-no-animation="">
+  
+    Fractured Intelligence: Why Order Still Matters in AI
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Even if large language models grasp deep concepts like symmetry or linearity, their internal representations remain messy and entangled — opaque to human understanding. This lack of structure may limit their ability to generalise far beyond training data. Pairing them with well-organised, ontological frameworks offers a path toward clarity, verifiability, and deeper reasoning.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/fractured-intelligence-why-order-still-matters-in-ai" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Co-Creative Intelligence: When AI Agents Help Build Their Own World]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/co-creative-intelligence-when-ai-agents-help-build-their-own-world</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/co-creative-intelligence-when-ai-agents-help-build-their-own-world"/>
+        <updated>2025-10-21T15:09:15.283Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/co-creative-intelligence-when-ai-agents-help-build-their-own-world" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg" data-image-dimensions="1511x1617" data-image-focal-point="0.5,0.5" alt="Co-Creative Intelligence: When AI Agents Help Build Their Own World" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg" width="1511" height="1617" sizes="(max-width:767px)140.16697588126158vw,70.08348794063079vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305614382-2CZA3HZGVNQ164BH032V/co-creation.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/AI+Agents" class="blog-categories">AI Agents</a>
+      </span>
+    
+    
+      <span class="blog-author">Callum Hornblower</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">04/07/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/AI+Agents" class="blog-categories">AI Agents</a>
+      </span>
+    
+    
+      <span class="blog-author">Callum Hornblower</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">04/07/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/co-creative-intelligence-when-ai-agents-help-build-their-own-world" data-no-animation="">
+  
+    Co-Creative Intelligence: When AI Agents Help Build Their Own World
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">AI agents that work with knowledge graphs aren’t just operating inside a static environment — they’re helping to build it. This co-creative relationship mirrors the dynamics of active inference, where intelligence emerges from continuous interaction between beliefs and reality. The real differentiator isn’t better algorithms, but better ontologies — clearer models of the world aligned with organisational strategy.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/co-creative-intelligence-when-ai-agents-help-build-their-own-world" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Entropy to Intelligence: Redefining Boundaries with Knowledge Graphs]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/from-entropy-to-intelligence-redefining-boundaries-with-knowledge-graphs</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/from-entropy-to-intelligence-redefining-boundaries-with-knowledge-graphs"/>
+        <updated>2025-10-21T15:09:15.285Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/from-entropy-to-intelligence-redefining-boundaries-with-knowledge-graphs" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg" data-image-dimensions="1062x815" data-image-focal-point="0.5,0.5" alt="From Entropy to Intelligence: Redefining Boundaries with Knowledge Graphs" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg" width="1062" height="815" sizes="(max-width:767px)195.46012269938652vw,97.73006134969326vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759305295704-5OIRWB2281YMP1HUUDLE/the-physics-of-organisational-ai.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Knowledge+Graphs" class="blog-categories">Knowledge Graphs</a>
+      </span>
+    
+    
+      <span class="blog-author">Callum Hornblower</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">04/07/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Knowledge+Graphs" class="blog-categories">Knowledge Graphs</a>
+      </span>
+    
+    
+      <span class="blog-author">Callum Hornblower</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">04/07/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/from-entropy-to-intelligence-redefining-boundaries-with-knowledge-graphs" data-no-animation="">
+  
+    From Entropy to Intelligence: Redefining Boundaries with Knowledge Graphs
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Organisations behave like dissipative systems — optimising locally while exporting entropy to the whole. To become AI-native, we must redraw our boundaries, dissolving silos and integrating intelligence at the organisational level. Knowledge Graphs provide the connective tissue for this transformation, turning chaos into coherence.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/from-entropy-to-intelligence-redefining-boundaries-with-knowledge-graphs" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Knowledge Graphs Are Going Mainstream: The New Foundation for AI]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/knowledge-graphs-are-going-mainstream-the-new-foundation-for-ai</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/knowledge-graphs-are-going-mainstream-the-new-foundation-for-ai"/>
+        <updated>2025-10-21T15:09:15.287Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/knowledge-graphs-are-going-mainstream-the-new-foundation-for-ai" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg" data-image-dimensions="853x1280" data-image-focal-point="0.5,0.5" alt="Knowledge Graphs Are Going Mainstream: The New Foundation for AI" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg" width="853" height="1280" sizes="(max-width:767px)100vw,50vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304832708-X05KKADHX0GAE91LLORD/enterprise-evolution.jpeg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Knowledge+Graphs" class="blog-categories">Knowledge Graphs</a>
+      </span>
+    
+    
+      <span class="blog-author">Callum Hornblower</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">27/06/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Knowledge+Graphs" class="blog-categories">Knowledge Graphs</a>
+      </span>
+    
+    
+      <span class="blog-author">Callum Hornblower</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">27/06/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/knowledge-graphs-are-going-mainstream-the-new-foundation-for-ai" data-no-animation="">
+  
+    Knowledge Graphs Are Going Mainstream: The New Foundation for AI
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">From SAP and Netflix to ServiceNow and Samsung, leading organisations are embracing knowledge graphs and ontologies as foundational infrastructure for AI and analytics. The reason is clear: AI needs context, businesses need unified meaning, and users need semantic access to insights. The knowledge graph is becoming the new enterprise standard.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/knowledge-graphs-are-going-mainstream-the-new-foundation-for-ai" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[URLs for Data: The Key to Scalable Data Marketplaces]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/urls-for-data-the-key-to-scalable-data-marketplaces</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/urls-for-data-the-key-to-scalable-data-marketplaces"/>
+        <updated>2025-10-21T15:09:15.288Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/urls-for-data-the-key-to-scalable-data-marketplaces" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png" data-image-dimensions="1127x669" data-image-focal-point="0.5,0.5" alt="URLs for Data: The Key to Scalable Data Marketplaces" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png" width="1127" height="669" sizes="(max-width:767px)252.69058295964123vw,126.34529147982062vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304713033-1REV0989RWCDFJKKP8SB/universal-identifiers.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+    
+      <span class="blog-author">Callum Hornblower</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">20/06/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+    
+      <span class="blog-author">Callum Hornblower</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">20/06/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/urls-for-data-the-key-to-scalable-data-marketplaces" data-no-animation="">
+  
+    URLs for Data: The Key to Scalable Data Marketplaces
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">All functioning marketplaces rely on shared standards — and data marketplaces are no exception. The key lies in universal identifiers. Borrowing from the Semantic Web, the use of resolvable URLs for data items offers a simple, scalable way to unify fragmented data estates and enable decentralised coordination across the enterprise.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/urls-for-data-the-key-to-scalable-data-marketplaces" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Head of Data & AI: Reversing the Flow of Intelligence]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/head-of-data-amp-ai-reversing-the-flow-of-intelligence</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/head-of-data-amp-ai-reversing-the-flow-of-intelligence"/>
+        <updated>2025-10-21T15:09:15.290Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/head-of-data-amp-ai-reversing-the-flow-of-intelligence" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png" data-image-dimensions="490x479" data-image-focal-point="0.5,0.5" alt="Head of Data &amp;amp; AI: Reversing the Flow of Intelligence " data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png" width="490" height="479" sizes="(max-width:767px)153.4446764091858vw,76.7223382045929vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759304047675-LKA89QHRNWNZZSNG718B/head-of-data-and-ai.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Knowledge+Graphs" class="blog-categories">Knowledge Graphs</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">13/06/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Knowledge+Graphs" class="blog-categories">Knowledge Graphs</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">13/06/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/head-of-data-amp-ai-reversing-the-flow-of-intelligence" data-no-animation="">
+  
+    Head of Data &amp; AI: Reversing the Flow of Intelligence 
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Forward-thinking organisations are realising that their AI strategy is their data strategy. The next frontier isn’t extracting intelligence from data — it’s embedding intelligence back into it. By using AI to shape, connect, and structure data through ontologies and knowledge graphs, we create systems that truly reflect how the business thinks.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/head-of-data-amp-ai-reversing-the-flow-of-intelligence" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hairball of Hell]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/hairball-of-hell</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/hairball-of-hell"/>
+        <updated>2025-10-21T15:09:15.292Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/hairball-of-hell" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg" data-image-dimensions="1024x1024" data-image-focal-point="0.5,0.5" alt="Hairball of Hell" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg" width="1024" height="1024" sizes="(max-width:767px)150vw,75vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759303524681-X4LZT2L11S18249JKBSI/hairball-of-hell.jpeg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">06/06/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">06/06/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/hairball-of-hell" data-no-animation="">
+  
+    Hairball of Hell
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">Every graph professional eventually meets the Hairball of Hell — the tangled mess that emerges when beautiful graphs outgrow human perception. While AI can thrive in this complexity, we can’t. The solution isn’t more visualisation; it’s meaning. Ontology acts as a semantic scaffold, helping both humans and machines navigate complexity with purpose.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/hairball-of-hell" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Philosophy Eats AI]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/philosophy-eats-ai</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/philosophy-eats-ai"/>
+        <updated>2025-10-21T15:09:15.294Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/philosophy-eats-ai" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg" data-image-dimensions="1024x1024" data-image-focal-point="0.5,0.5" alt="Philosophy Eats AI" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg" width="1024" height="1024" sizes="(max-width:767px)150vw,75vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759273908336-6QUB6G5AQ8Z2606MT9MQ/vocabulary-of-value-creation.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Artificial+Intelligence" class="blog-categories">Artificial Intelligence</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">30/05/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+    <span class="blog-meta-delimiter blog-category-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+      <span class="blog-categories-list">
+        
+          <a href="/blog/category/Artificial+Intelligence" class="blog-categories">Artificial Intelligence</a>
+      </span>
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">30/05/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/philosophy-eats-ai" data-no-animation="">
+  
+    Philosophy Eats AI
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">If software is eating the world and AI is eating software, what eats AI? The answer is philosophy—expressed through a clear, machine-readable ontology. By surfacing your enterprise’s core semantics and linking them to real data, you give AI a lens to reason over what truly matters: how your business creates value.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/philosophy-eats-ai" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Discovery to Deployment: How AlphaEvolve Blends Creativity with Rigour]]></title>
+        <id>https://www.knowledge-graph-guys.com/blog/alphaevolve-blends-creativity-with-rigour</id>
+        <link href="https://www.knowledge-graph-guys.com/blog/alphaevolve-blends-creativity-with-rigour"/>
+        <updated>2025-10-21T15:09:15.297Z</updated>
+        <content type="html"><![CDATA[<div>
+          <a href="/blog/alphaevolve-blends-creativity-with-rigour" class="image-wrapper" data-animation-role="image">
+  
+<img data-src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg" data-image="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg" data-image-dimensions="1024x1024" data-image-focal-point="0.5,0.5" alt="From Discovery to Deployment: How AlphaEvolve Blends Creativity with Rigour" data-load="false" src="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg" width="1024" height="1024" sizes="(max-width:767px)150vw,75vw" class="image" style="display:block;position: absolute; height: 100%; width: 100%; object-fit: cover; object-position: 50% 50%;" srcset="https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/66e198c41bca067f0eba2216/1759272795471-V8RPVEYUT4J122M723JR/AlphaEvolve.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+</a>
+
+        </div>
+        <div class="blog-article-spacer"></div>
+      
+      <div class="blog-basic-grid--text">
+        <div class="blog-meta-section">
+  <span class="blog-meta-primary">
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">22/05/2025</time>
+  </span>
+  <span class="blog-meta-delimiter"></span>
+  
+  <span class="blog-meta-secondary">
+    
+    
+      <span class="blog-author">Tony Seale</span>
+    
+    <time class="blog-date" pubdate="" data-animation-role="date">22/05/2025</time>
+  </span>
+  
+  
+  
+</div>
+<h1 class="blog-title">
+  
+    <a href="/blog/alphaevolve-blends-creativity-with-rigour" data-no-animation="">
+  
+    From Discovery to Deployment: How AlphaEvolve Blends Creativity with Rigour
+  </a>
+</h1>
+<div class="blog-excerpt">
+  <div class="blog-excerpt-wrapper"><p style="white-space:pre-wrap;" data-rte-preserve-empty="true">DeepMind’s AlphaEvolve blends LLM creativity with automated evaluation, unlocking breakthroughs from new matrix multiplication algorithms to global compute optimisation. Its success signals a new era for verifiable AI — and shows why enterprises need semantic frameworks like ontologies and knowledge graphs to bring similar rigour to complex business domains.</p><p style="white-space:pre-wrap;" data-rte-preserve-empty="true"></p></div>
+  
+</div>
+
+<a class="blog-more-link" href="/blog/alphaevolve-blends-creativity-with-rigour" data-animation-role="content">Read More</a>
+
+
+      </div>]]></content>
+    </entry>
 </feed>
