@@ -4,3 +4,11 @@ url = "https://www.knowledge-graph-guys.com/blog"
 entrySelector = ".content article"
 titleSelector = "h1 a"
 linkSelector = "h1 a"
+
+[triplydb-changelog]
+title = "TriplyDB Changelog"
+url = "https://docs.triply.cc/triplydb-changelog/"
+entrySelector = "[role=main] h2"
+titleSelector = "*"
+linkSelector = "a.headerlink"
+sectionEntries = true
