@@ -1,9 +1,9 @@
-import { firefox, Page } from "playwright-firefox";
-import { Feed } from "feed";
-import { writeFile, mkdir, readFile } from "fs/promises";
-import fetch from "node-fetch";
-import { URL } from "url";
 import { parse as parseToml } from "@ltd/j-toml";
+import { Feed } from "feed";
+import { mkdir, readFile, writeFile } from "fs/promises";
+import fetch from "node-fetch";
+import { firefox, Page } from "playwright-firefox";
+import { URL } from "url";
 import { getContents, getDate, getImage, getLink, getTitle } from "./parse.js";
 
 export async function run(configFilePath = "./feeds.toml"): Promise<void> {
@@ -72,6 +72,7 @@ export type FeedConfig = {
   waitUntil?: NonNullable<Parameters<Page["goto"]>[1]>["waitUntil"];
   /** This option is experimental, and may be removed at any time: */
   onFail?: "error" | "stale" | "exclude";
+  sectionEntries?: boolean;
 };
 
 async function loadFeedConfigs(configFilePath: string): Promise<FeedConfig[]> {
@@ -195,13 +196,61 @@ async function fetchPageEntries(
   config: FeedConfig
 ): Promise<FeedData["elements"]> {
   debug(`Fetching ${url} for ${config.id}`, "info");
+
   await page.goto(url, {
     timeout: (config.timeout ?? 60) * 1000,
     waitUntil: config.waitUntil ?? "domcontentloaded",
   });
+
   if (typeof config.waitForSelector === "string") {
     await page.waitForSelector(config.waitForSelector);
   }
+
+  if (config.sectionEntries === true) {
+    // Section-entry mode: each entry element is treated as a section header,
+    // and its contents are all the sibling elements up to (but not including)
+    // the next entry element. This is useful for pages structured as a flat
+    // list of headings followed by their content (e.g. changelogs).
+    const entryHandles = await page.$$(config.entrySelector);
+
+    const entries: FeedData["elements"] = [];
+
+    for (let i = 0; i < entryHandles.length; i++) {
+      const entryElement = entryHandles[i];
+      const nextEntryElement = entryHandles[i + 1];
+
+      const contents = await entryElement.evaluate((el, nextEl) => {
+        const parts: string[] = [];
+
+        // Skip the heading itself; collect siblings until the next entry.
+        let current: Element | null = el.nextElementSibling;
+        while (current && current !== nextEl) {
+          parts.push(current.outerHTML);
+          current = current.nextElementSibling;
+        }
+
+        return parts.join("\n");
+      }, nextEntryElement ?? null);
+
+      entries.push({
+        title: await getTitle(entryElement, config.titleSelector),
+        contents,
+        link: config.linkSelector
+          ? await getLink(entryElement, config.linkSelector, baseUrl)
+          : url,
+        retrieved: await getDate(
+          entryElement,
+          config.dateSelector,
+          config.dateFormat
+        ),
+        image: await getImage(entryElement, config.imageSelector, baseUrl),
+      });
+    }
+
+    return entries;
+  }
+
+  // Default (backward-compatible) behavior: each entry element is self-contained.
   const entriesElements = await page.$$(config.entrySelector);
   const entries: FeedData["elements"] = await Promise.all(
     entriesElements.map(async (entryElement) => {

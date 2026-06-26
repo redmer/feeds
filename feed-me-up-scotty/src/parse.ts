@@ -1,10 +1,10 @@
 import { parse as parseDate, parseISO as parseIsoDate } from "date-fns";
-import { ElementHandleForTag } from "playwright-core/types/structs";
+import type { ElementHandle } from "playwright-firefox";
 import { URL } from "url";
 import type { FeedConfig, FeedData } from "./run";
 
 export async function getTitle(
-  entryElement: ElementHandleForTag<string>,
+  entryElement: ElementHandle<Element>,
   titleSelector: FeedConfig["titleSelector"]
 ): Promise<FeedData["elements"][0]["title"]> {
   if (Array.isArray(titleSelector)) {
@@ -22,7 +22,7 @@ export async function getTitle(
 }
 
 export async function getLink(
-  entryElement: ElementHandleForTag<string>,
+  entryElement: ElementHandle<Element>,
   linkSelector: Required<FeedConfig>["linkSelector"],
   baseUrl: string
 ): Promise<FeedData["elements"][0]["link"]> {
@@ -36,7 +36,7 @@ export async function getLink(
 }
 
 export async function getContents(
-  entryElement: ElementHandleForTag<string>,
+  entryElement: ElementHandle<Element>,
   contentSelector: FeedConfig["contentSelector"]
 ): Promise<FeedData["elements"][0]["contents"]> {
   if (Array.isArray(contentSelector)) {
@@ -48,6 +48,7 @@ export async function getContents(
       )
     ).join(" ");
   }
+
   if (typeof contentSelector === "string") {
     const contentElements = await entryElement.$$(contentSelector);
 
@@ -66,7 +67,7 @@ export async function getContents(
 }
 
 export async function getDate(
-  entryElement: ElementHandleForTag<string>,
+  entryElement: ElementHandle<Element>,
   dateSelector: FeedConfig["dateSelector"],
   dateFormat: FeedConfig["dateFormat"]
 ): Promise<FeedData["elements"][0]["retrieved"]> {
@@ -97,7 +98,7 @@ export async function getDate(
 }
 
 export async function getImage(
-  entryElement: ElementHandleForTag<string>,
+  entryElement: ElementHandle<Element>,
   imageSelector: FeedConfig["imageSelector"],
   baseUrl: string
 ): Promise<FeedData["elements"][0]["title"]> {
@@ -110,7 +111,7 @@ export async function getImage(
     if (imageSelector && typeof imageUrl !== "string") {
       const backgroundImageValue = await entryElement.$eval(
         imageSelector,
-        (el) => el.style["background-image"]
+        (el: Element) => (el as HTMLElement).style.backgroundImage
       );
       if (
         typeof backgroundImageValue === "string" &&
