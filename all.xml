@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-07-06T18:17:05.305Z</updated>
+    <updated>2026-07-07T06:48:19.452Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -1283,6 +1283,23 @@
 
 
       </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.7.100¶ (TriplyDB Changelog)]]></title>
+        <id>https://docs.triply.cc/triplydb-changelog/#26.7.100</id>
+        <link href="https://docs.triply.cc/triplydb-changelog/#26.7.100"/>
+        <updated>2026-07-07T06:48:18.096Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-07-06</p>
+<p><strong>Features</strong></p>
+<p>None</p>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><code>#11262</code> [SPARQL] <code>isURI</code> returned different results from <code>isIRI</code>, even though the SPARQL specification defines the two as equivalent.</li>
+<li><code>#11580</code> [SPARQL] Federated <code>SERVICE</code> queries could fail with a "response too large" error.</li>
+<li><code>#9933</code> [SPARQL] A <code>SERVICE</code> clause could not query a private or non-public dataset hosted on the same instance.</li>
+<li><code>#11734</code> [Data Editor] The data editor over-fetched class information and could freeze when opening datasets with large class hierarchies.</li>
+<li>[Data Editor] Exact matches were not sorted to the top of the autocomplete results in the SKOS editor, matching the behaviour already corrected for other autocompletes.</li>
+</ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.6.100¶ (TriplyDB Changelog)]]></title>
