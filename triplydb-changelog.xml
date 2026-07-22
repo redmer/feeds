@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/triplydb-changelog/</id>
     <title>TriplyDB Changelog</title>
-    <updated>2026-07-21T17:57:39.647Z</updated>
+    <updated>2026-07-22T06:21:05.323Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/triplydb-changelog/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[26.7.200¶]]></title>
+        <id>https://docs.triply.cc/triplydb-changelog/#26.7.200</id>
+        <link href="https://docs.triply.cc/triplydb-changelog/#26.7.200"/>
+        <updated>2026-07-22T06:21:03.366Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-07-21</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><code>#11548</code> [Data Model] The schema view now visualizes <code>owl:equivalentClass</code> relations between classes, drawn as a distinct edge type, so class alignments and mappings between ontologies are visible at a glance.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[26.7.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.7.100</id>
