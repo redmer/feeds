@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-08-19T17:40:39.993Z</updated>
+    <updated>2026-08-20T05:43:23.239Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -1283,6 +1283,26 @@
 
 
       </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.8.200¶ (TriplyDB Changelog)]]></title>
+        <id>https://docs.triply.cc/triplydb-changelog/#26.8.200</id>
+        <link href="https://docs.triply.cc/triplydb-changelog/#26.8.200"/>
+        <updated>2026-08-20T05:43:21.638Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-08-19</p>
+<p><strong>Features</strong></p>
+<ul>
+<li>[SPARQL] The query planner now carries known variable bindings across <code>SERVICE</code> and <code>ORDER BY</code>, instead of treating them as a barrier. Joins that follow such an operation can use the bindings established before it, which makes federated queries in particular considerably faster — one benchmark query dropped from 1.4 seconds to 0.49 seconds.</li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><code>#13613</code> [Access Control] API tokens could not delete a group any more, and the call failed with <code>401 Unauthorized</code>. </li>
+<li><code>#13614</code> [API] The API response for pinned account items had an unintended breaking schema change, causing possible breakage in third party application</li>
+<li><code>#13306</code> <code>#13500</code> [SPARQL] Very large SPARQL Update queries could fail with a "response too large" error. </li>
+<li><code>#13449</code> [SPARQL] An aggregate ignored a value that its output variable was already bound to, returning every group instead of only the groups that matched. </li>
+<li><code>#13429</code> [Saved Queries] Navigating away from a saved query with unsaved changes showed the "are you sure" prompt twice.</li>
+<li>[Console] Links that open a dialog — configuring pinned items, adding a user, showing code snippets — replaced the current browser history entry instead of adding one, so the browser's back button could not be used to close the dialog.</li>
+</ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.8.100¶ (TriplyDB Changelog)]]></title>
