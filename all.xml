@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-09-02T05:40:20.978Z</updated>
+    <updated>2026-09-02T17:36:51.024Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -1283,6 +1283,23 @@
 
 
       </div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.9.100¶ (TriplyDB Changelog)]]></title>
+        <id>https://docs.triply.cc/triplydb-changelog/#26.9.100</id>
+        <link href="https://docs.triply.cc/triplydb-changelog/#26.9.100"/>
+        <updated>2026-09-02T17:36:49.340Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-09-02</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><code>#10520</code> [Data Upload] JSON files can now be uploaded, and are converted to RDF following the same <a href="https://sparql-anything.readthedocs.io/stable/formats/JSON/">Facade-X</a> mapping that XML and tabular uploads already use. JSON Lines is supported as well, through the <code>.jsonl</code> and <code>.ndjson</code> extensions. Note that <code>.json</code> files are now read as plain JSON rather than as JSON-LD: use the <code>.jsonld</code> extension for JSON-LD documents. See <a href="https://docs.triply.cc/triply-db-getting-started/uploading-data/#supported-data-formats">Supported data formats</a>.</li>
+<li><code>#9715</code> [SPARQL] Optimized query planning, so that sorting (via <code>order by</code>) a smaller intermediate result is cheaper, so queries that sort before an operation which multiplies rows — several triple patterns on the same subject, a union, a property path — get faster.</li>
+<li><code>#11338</code> [SaaS] SSL (<code>https</code>) connections to TriplyDB deployments now negotiate post-quantum key exchange, and the accepted cipher suites have been narrowed to the current recommendations. This guards traffic captured today against decryption by a future quantum computer.</li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li>[SPARQL-IDE] Autocomplete suggestions are slow, causing a decrease in user experience</li>
+</ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.8.200¶ (TriplyDB Changelog)]]></title>
