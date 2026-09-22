@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/triplydb-changelog/</id>
     <title>TriplyDB Changelog</title>
-    <updated>2026-09-22T05:40:02.768Z</updated>
+    <updated>2026-09-22T17:36:41.783Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/triplydb-changelog/favicon.ico</icon>
     <entry>
@@ -598,7 +598,7 @@
         <title type="html"><![CDATA[25.5.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.5.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.5.100"/>
-        <updated>2026-09-22T05:40:01.972Z</updated>
+        <updated>2026-09-22T05:40:01.963Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-05-14</p>
 <p><strong>Features</strong></p>
 <ul>
