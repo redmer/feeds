@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/triplydb-changelog/</id>
     <title>TriplyDB Changelog</title>
-    <updated>2026-09-21T17:37:19.086Z</updated>
+    <updated>2026-09-22T05:40:02.768Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/triplydb-changelog/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[26.9.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.9.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.9.200"/>
-        <updated>2026-09-16T17:37:02.374Z</updated>
+        <updated>2026-09-22T05:40:01.670Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-09-16</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -31,7 +31,7 @@
         <title type="html"><![CDATA[26.9.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.9.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.9.100"/>
-        <updated>2026-09-02T17:36:49.340Z</updated>
+        <updated>2026-09-22T05:40:01.681Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-09-02</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -48,7 +48,7 @@
         <title type="html"><![CDATA[26.8.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.8.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.8.200"/>
-        <updated>2026-08-20T05:43:21.638Z</updated>
+        <updated>2026-09-22T05:40:01.691Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-08-19</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -68,7 +68,7 @@
         <title type="html"><![CDATA[26.8.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.8.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.8.100"/>
-        <updated>2026-08-05T18:03:37.087Z</updated>
+        <updated>2026-09-22T05:40:01.699Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-08-05</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -88,7 +88,7 @@
         <title type="html"><![CDATA[26.7.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.7.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.7.200"/>
-        <updated>2026-07-22T06:21:03.366Z</updated>
+        <updated>2026-09-22T05:40:01.707Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-07-21</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -99,7 +99,7 @@
         <title type="html"><![CDATA[26.7.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.7.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.7.100"/>
-        <updated>2026-07-07T06:48:18.096Z</updated>
+        <updated>2026-09-22T05:40:01.715Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-07-06</p>
 <p><strong>Features</strong></p>
 <p>None</p>
@@ -116,7 +116,7 @@
         <title type="html"><![CDATA[26.6.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.6.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.6.100"/>
-        <updated>2026-06-26T10:58:42.114Z</updated>
+        <updated>2026-09-22T05:40:01.725Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-06-11</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -141,7 +141,7 @@
         <title type="html"><![CDATA[26.5.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.5.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.5.200"/>
-        <updated>2026-06-26T10:58:42.129Z</updated>
+        <updated>2026-09-22T05:40:01.738Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-05-28</p>
 <p><strong>Features</strong></p>
 <p>none</p>
@@ -158,7 +158,7 @@
         <title type="html"><![CDATA[26.5.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.5.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.5.100"/>
-        <updated>2026-06-26T10:58:42.146Z</updated>
+        <updated>2026-09-22T05:40:01.753Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-05-14</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -175,7 +175,7 @@
         <title type="html"><![CDATA[26.4.300¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.4.300</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.4.300"/>
-        <updated>2026-06-26T10:58:42.156Z</updated>
+        <updated>2026-09-22T05:40:01.763Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-04-30</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -194,7 +194,7 @@
         <title type="html"><![CDATA[26.4.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.4.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.4.200"/>
-        <updated>2026-06-26T10:58:42.168Z</updated>
+        <updated>2026-09-22T05:40:01.771Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-04-16</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -207,7 +207,7 @@
         <title type="html"><![CDATA[26.4.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.4.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.4.100"/>
-        <updated>2026-06-26T10:58:42.180Z</updated>
+        <updated>2026-09-22T05:40:01.779Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-04-01</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -224,7 +224,7 @@
         <title type="html"><![CDATA[26.3.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.3.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.3.200"/>
-        <updated>2026-06-26T10:58:42.191Z</updated>
+        <updated>2026-09-22T05:40:01.788Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-03-19</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -239,7 +239,7 @@
         <title type="html"><![CDATA[26.3.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.3.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.3.100"/>
-        <updated>2026-06-26T10:58:42.204Z</updated>
+        <updated>2026-09-22T05:40:01.795Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-03-04</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -255,7 +255,7 @@
         <title type="html"><![CDATA[26.2.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.2.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.2.200"/>
-        <updated>2026-06-26T10:58:42.217Z</updated>
+        <updated>2026-09-22T05:40:01.806Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-02-18</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -273,7 +273,7 @@
         <title type="html"><![CDATA[26.2.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.2.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.2.100"/>
-        <updated>2026-06-26T10:58:42.229Z</updated>
+        <updated>2026-09-22T05:40:01.818Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-02-04</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -304,7 +304,7 @@
         <title type="html"><![CDATA[26.1.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.1.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.1.200"/>
-        <updated>2026-06-26T10:58:42.242Z</updated>
+        <updated>2026-09-22T05:40:01.825Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-01-21</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -328,7 +328,7 @@
         <title type="html"><![CDATA[26.1.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.1.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#26.1.100"/>
-        <updated>2026-06-26T10:58:42.254Z</updated>
+        <updated>2026-09-22T05:40:01.834Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-01-07</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -342,7 +342,7 @@
         <title type="html"><![CDATA[25.12.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.12.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.12.100"/>
-        <updated>2026-06-26T10:58:42.267Z</updated>
+        <updated>2026-09-22T05:40:01.841Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-12-10</p>
 <p><strong>Features</strong></p>
 <p>None</p>
@@ -357,7 +357,7 @@
         <title type="html"><![CDATA[25.11.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.11.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.11.200"/>
-        <updated>2026-06-26T10:58:42.283Z</updated>
+        <updated>2026-09-22T05:40:01.850Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-11-27</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -368,7 +368,7 @@
         <title type="html"><![CDATA[25.11.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.11.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.11.100"/>
-        <updated>2026-06-26T10:58:42.300Z</updated>
+        <updated>2026-09-22T05:40:01.858Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-11-13</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -380,7 +380,7 @@
         <title type="html"><![CDATA[25.10.301¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.10.301</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.10.301"/>
-        <updated>2026-06-26T10:58:42.318Z</updated>
+        <updated>2026-09-22T05:40:01.866Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-11-06</p>
 <p>Patch release for:</p>
 <ul>
@@ -393,7 +393,7 @@
         <title type="html"><![CDATA[25.10.300¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.10.300</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.10.300"/>
-        <updated>2026-06-26T10:58:42.331Z</updated>
+        <updated>2026-09-22T05:40:01.874Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-10-29</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -411,7 +411,7 @@
         <title type="html"><![CDATA[25.10.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.10.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.10.200"/>
-        <updated>2026-06-26T10:58:42.344Z</updated>
+        <updated>2026-09-22T05:40:01.882Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-10-16</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -431,7 +431,7 @@
         <title type="html"><![CDATA[25.10.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.10.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.10.100"/>
-        <updated>2026-06-26T10:58:42.358Z</updated>
+        <updated>2026-09-22T05:40:01.891Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-10-02</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -450,7 +450,7 @@
         <title type="html"><![CDATA[25.9.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.9.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.9.100"/>
-        <updated>2026-06-26T10:58:42.373Z</updated>
+        <updated>2026-09-22T05:40:01.898Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-09-18</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -472,7 +472,7 @@
         <title type="html"><![CDATA[25.8.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.8.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.8.200"/>
-        <updated>2026-06-26T10:58:42.392Z</updated>
+        <updated>2026-09-22T05:40:01.906Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-08-28</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -503,7 +503,7 @@
         <title type="html"><![CDATA[25.08.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.08.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.08.100"/>
-        <updated>2026-06-26T10:58:42.404Z</updated>
+        <updated>2026-09-22T05:40:01.916Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-08-06</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -524,7 +524,7 @@
         <title type="html"><![CDATA[25.7.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.7.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.7.100"/>
-        <updated>2026-06-26T10:58:42.416Z</updated>
+        <updated>2026-09-22T05:40:01.926Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-07-16</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -551,7 +551,7 @@
         <title type="html"><![CDATA[25.6.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.6.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.6.200"/>
-        <updated>2026-06-26T10:58:42.429Z</updated>
+        <updated>2026-09-22T05:40:01.938Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-06-26</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -569,7 +569,7 @@
         <title type="html"><![CDATA[25.6.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.6.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.6.100"/>
-        <updated>2026-06-26T10:58:42.442Z</updated>
+        <updated>2026-09-22T05:40:01.954Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-06-05</p>
 <p><strong>Issues fixed</strong>
 - <code>#10477</code> Cannot access index information for elasticsearch
@@ -580,7 +580,7 @@
         <title type="html"><![CDATA[25.5.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.5.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.5.100"/>
-        <updated>2026-06-26T10:58:42.455Z</updated>
+        <updated>2026-09-22T05:40:01.963Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-05-14</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -598,7 +598,7 @@
         <title type="html"><![CDATA[25.5.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.5.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.5.100"/>
-        <updated>2026-06-26T10:58:42.455Z</updated>
+        <updated>2026-09-22T05:40:01.972Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-05-14</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -616,7 +616,7 @@
         <title type="html"><![CDATA[25.4.300¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.4.300</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.4.300"/>
-        <updated>2026-06-26T10:58:42.483Z</updated>
+        <updated>2026-09-22T05:40:01.982Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-04-28</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -634,7 +634,7 @@
         <title type="html"><![CDATA[25.4.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.4.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.4.200"/>
-        <updated>2026-06-26T10:58:42.498Z</updated>
+        <updated>2026-09-22T05:40:01.990Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-04-16</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -651,7 +651,7 @@
         <title type="html"><![CDATA[25.4.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.4.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.4.100"/>
-        <updated>2026-06-26T10:58:42.511Z</updated>
+        <updated>2026-09-22T05:40:02.001Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-04-03</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -672,7 +672,7 @@
         <title type="html"><![CDATA[25.3.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.3.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.3.200"/>
-        <updated>2026-06-26T10:58:42.526Z</updated>
+        <updated>2026-09-22T05:40:02.009Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-03-20</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -698,7 +698,7 @@
         <title type="html"><![CDATA[25.3.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.3.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.3.100"/>
-        <updated>2026-06-26T10:58:42.537Z</updated>
+        <updated>2026-09-22T05:40:02.018Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-03-06</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -722,7 +722,7 @@
         <title type="html"><![CDATA[25.2.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.2.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.2.200"/>
-        <updated>2026-06-26T10:58:42.551Z</updated>
+        <updated>2026-09-22T05:40:02.027Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-02-20</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -746,7 +746,7 @@
         <title type="html"><![CDATA[25.2.100¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.2.100</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.2.100"/>
-        <updated>2026-06-26T10:58:42.566Z</updated>
+        <updated>2026-09-22T05:40:02.035Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-02-06 </p>
 <p><strong>Features</strong></p>
 <ul>
@@ -759,7 +759,7 @@
         <title type="html"><![CDATA[25.1.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.1.200</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.1.200"/>
-        <updated>2026-06-26T10:58:42.580Z</updated>
+        <updated>2026-09-22T05:40:02.043Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-01-23</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -781,7 +781,7 @@
         <title type="html"><![CDATA[25.01.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.01.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.01.1"/>
-        <updated>2026-06-26T10:58:42.592Z</updated>
+        <updated>2026-09-22T05:40:02.052Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-01-09</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -794,7 +794,7 @@
         <title type="html"><![CDATA[24.12.2¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.12.2</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.12.2"/>
-        <updated>2026-06-26T10:58:42.603Z</updated>
+        <updated>2026-09-22T05:40:02.062Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-12-18</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -806,7 +806,7 @@
         <title type="html"><![CDATA[24.12.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.12.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.12.1"/>
-        <updated>2026-06-26T10:58:42.615Z</updated>
+        <updated>2026-09-22T05:40:02.071Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-12-05</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -820,7 +820,7 @@
         <title type="html"><![CDATA[24.11.2¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.11.2</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.11.2"/>
-        <updated>2026-06-26T10:58:42.627Z</updated>
+        <updated>2026-09-22T05:40:02.082Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-11-22</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -832,7 +832,7 @@
         <title type="html"><![CDATA[24.11.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.11.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.11.1"/>
-        <updated>2026-06-26T10:58:42.638Z</updated>
+        <updated>2026-09-22T05:40:02.094Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-11-08</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -851,7 +851,7 @@
         <title type="html"><![CDATA[24.10.2¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.10.2</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.10.2"/>
-        <updated>2026-06-26T10:58:42.651Z</updated>
+        <updated>2026-09-22T05:40:02.104Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-10-25</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -866,7 +866,7 @@
         <title type="html"><![CDATA[24.10.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.10.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.10.1"/>
-        <updated>2026-06-26T10:58:42.662Z</updated>
+        <updated>2026-09-22T05:40:02.112Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-10-11</p>
 <p><strong>Issues fixed</strong></p>
 <ul>
@@ -878,7 +878,7 @@
         <title type="html"><![CDATA[24.09.2¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.09.2</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.09.2"/>
-        <updated>2026-06-26T10:58:42.675Z</updated>
+        <updated>2026-09-22T05:40:02.123Z</updated>
         <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-09-27</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -897,7 +897,7 @@
         <title type="html"><![CDATA[24.09.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.09.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.09.1"/>
-        <updated>2026-06-26T10:58:42.687Z</updated>
+        <updated>2026-09-22T05:40:02.135Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#9535</code> [SPARQL-IDE] The camera point-of-view can be saved as part of a query, in the geo visualization. This enables more precise use in stories</li>
@@ -916,7 +916,7 @@
         <title type="html"><![CDATA[24.08.2¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.08.2</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.08.2"/>
-        <updated>2026-06-26T10:58:42.700Z</updated>
+        <updated>2026-09-22T05:40:02.144Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#8929</code> Added the display name of the user who created a version to the list of query versions</li>
@@ -934,7 +934,7 @@
         <title type="html"><![CDATA[24.08.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.08.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.08.1"/>
-        <updated>2026-06-26T10:58:42.713Z</updated>
+        <updated>2026-09-22T05:40:02.157Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#9388</code> Improved navigation of the admin settings pages</li>
@@ -950,7 +950,7 @@
         <title type="html"><![CDATA[24.08.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.08.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.08.0"/>
-        <updated>2026-06-26T10:58:42.725Z</updated>
+        <updated>2026-09-22T05:40:02.166Z</updated>
         <content type="html"><![CDATA[<p><strong>Issues fixed</strong></p>
 <ul>
 <li><code>#9328</code> Captions to query visualizations in stories are too wide</li>
@@ -961,7 +961,7 @@
         <title type="html"><![CDATA[24.07.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.07.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.07.1"/>
-        <updated>2026-06-26T10:58:42.737Z</updated>
+        <updated>2026-09-22T05:40:02.175Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#8928</code> [SPARQL-IDE] Improved usability of the gallery visualization with customization of keywords</li>
@@ -980,7 +980,7 @@
         <title type="html"><![CDATA[24.07.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.07.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.07.0"/>
-        <updated>2026-06-26T10:58:42.748Z</updated>
+        <updated>2026-09-22T05:40:02.183Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#9191</code> [Speedy] Added support for using SHACL SPARQL functions defined within a dataset</li>
@@ -997,7 +997,7 @@
         <title type="html"><![CDATA[24.06.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.06.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.06.1"/>
-        <updated>2026-06-26T10:58:42.760Z</updated>
+        <updated>2026-09-22T05:40:02.193Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#9122</code> [Speedy] Added support for the <code>units</code> vocabulary in the GeoSPARQL functions <code>geof:distance</code> and <code>geof:buffer</code></li>
@@ -1014,7 +1014,7 @@
         <title type="html"><![CDATA[24.06.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.06.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.06.0"/>
-        <updated>2026-06-26T10:58:42.772Z</updated>
+        <updated>2026-09-22T05:40:02.202Z</updated>
         <content type="html"><![CDATA[<p><strong>Issues fixed</strong></p>
 <ul>
 <li><code>#9212</code> [SPARQL-IDE] Unused variables are sometimes displayed incorrectly on first load</li>
@@ -1025,7 +1025,7 @@
         <title type="html"><![CDATA[24.05.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.05.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.05.1"/>
-        <updated>2026-06-26T10:58:42.783Z</updated>
+        <updated>2026-09-22T05:40:02.210Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#9081</code> [SPARQL-IDE] Support for a JSON-LD visualization is now more prominent</li>
@@ -1040,7 +1040,7 @@
         <title type="html"><![CDATA[24.05.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.05.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.05.0"/>
-        <updated>2026-06-26T10:58:42.802Z</updated>
+        <updated>2026-09-22T05:40:02.220Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#9063</code> [Speedy] Added support for <code>geof:buffer</code> GeoSPARQL functions</li>
@@ -1055,7 +1055,7 @@
         <title type="html"><![CDATA[24.04.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.04.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.04.1"/>
-        <updated>2026-06-26T10:58:42.815Z</updated>
+        <updated>2026-09-22T05:40:02.230Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#9136</code> [SPARQL-IDE] Added support for rendering gLTF 3D models</li>
@@ -1072,7 +1072,7 @@
         <title type="html"><![CDATA[24.04.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.04.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.04.0"/>
-        <updated>2026-06-26T10:58:42.828Z</updated>
+        <updated>2026-09-22T05:40:02.239Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#9050</code> Added a button to display the available keyboard shortcuts for the SPARQL-IDE</li>
@@ -1090,7 +1090,7 @@
         <title type="html"><![CDATA[24.03.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.03.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.03.1"/>
-        <updated>2026-06-26T10:58:42.840Z</updated>
+        <updated>2026-09-22T05:40:02.249Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#8580</code> Added saved query execution status in the TriplyDB administrator view</li>
@@ -1113,7 +1113,7 @@
         <title type="html"><![CDATA[24.03.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.03.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.03.0"/>
-        <updated>2026-06-26T10:58:42.855Z</updated>
+        <updated>2026-09-22T05:40:02.257Z</updated>
         <content type="html"><![CDATA[<p><strong>Issues fixed</strong></p>
 <ul>
 <li><code>#8600</code> [SPARQL-IDE] Automatically inserted brackets caused syntax errors</li>
@@ -1125,7 +1125,7 @@
         <title type="html"><![CDATA[24.02.2¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.02.2</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.02.2"/>
-        <updated>2026-06-26T10:58:42.867Z</updated>
+        <updated>2026-09-22T05:40:02.267Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#8659</code> [SPARQL-IDE] Show a notification when a SPARQL result set contains unrecognized geographic shapes</li>
@@ -1147,7 +1147,7 @@
         <title type="html"><![CDATA[24.02.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.02.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.02.1"/>
-        <updated>2026-06-26T10:58:42.879Z</updated>
+        <updated>2026-09-22T05:40:02.276Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#8795</code> Support use of the <code>&lt;style&gt;&lt;/style&gt;</code> attribute in markdown and HTML (used in dataset/account/query descriptions, or by the SPARQL  IDE)</li>
@@ -1170,7 +1170,7 @@
         <title type="html"><![CDATA[24.02.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.02.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.02.0"/>
-        <updated>2026-06-26T10:58:42.897Z</updated>
+        <updated>2026-09-22T05:40:02.285Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#7616</code> Render skolemized IRIs better</li>
@@ -1186,7 +1186,7 @@
         <title type="html"><![CDATA[24.01.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#24.01.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#24.01.0"/>
-        <updated>2026-06-26T10:58:42.909Z</updated>
+        <updated>2026-09-22T05:40:02.293Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong>
 - <code>#8502</code> [SPARQL IDE] Add confirmation mechanisms in the browser to avoid the browser rendering too much information. This avoids issues where the browser is rendered unresponsive</p>
 <p><strong>Issues fixed</strong></p>
@@ -1202,7 +1202,7 @@
         <title type="html"><![CDATA[23.12.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#23.12.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#23.12.1"/>
-        <updated>2026-06-26T10:58:42.921Z</updated>
+        <updated>2026-09-22T05:40:02.301Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#4209</code> Add queries overview page for TriplyDB administrators   </li>
@@ -1219,7 +1219,7 @@
         <title type="html"><![CDATA[23.12.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#23.12.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#23.12.0"/>
-        <updated>2026-06-26T10:58:42.933Z</updated>
+        <updated>2026-09-22T05:40:02.309Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#8224</code> [SPARQL IDE] Replace the current SPARQL editor with SPARQL IDE. The new SPARQL IDE will be gradually enabled on all TriplyDB deployments.<ul>
@@ -1241,7 +1241,7 @@
         <title type="html"><![CDATA[23.11.1¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#23.11.1</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#23.11.1"/>
-        <updated>2026-06-26T10:58:42.947Z</updated>
+        <updated>2026-09-22T05:40:02.316Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#8266</code> Automatic date detection and indexing in Elasticsearch</li>
@@ -1264,7 +1264,7 @@
         <title type="html"><![CDATA[23.11.0¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#23.11.0</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#23.11.0"/>
-        <updated>2026-06-26T10:58:42.960Z</updated>
+        <updated>2026-09-22T05:40:02.325Z</updated>
         <content type="html"><![CDATA[<p><strong>Features</strong></p>
 <ul>
 <li><code>#8324</code> Added quick-actions for changing the saved-query access level from the stories page. These quick-actions are shown when the story access level is incompatible with the saved-query access level (e.g., the story is public, but a saved-query is private)</li>
