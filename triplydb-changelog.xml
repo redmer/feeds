@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/triplydb-changelog/</id>
     <title>TriplyDB Changelog</title>
-    <updated>2026-09-30T17:40:02.428Z</updated>
+    <updated>2026-10-01T05:42:45.344Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/triplydb-changelog/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[26.9.300¶]]></title>
+        <id>https://docs.triply.cc/triplydb-changelog/#26.9.300</id>
+        <link href="https://docs.triply.cc/triplydb-changelog/#26.9.300"/>
+        <updated>2026-10-01T05:42:43.425Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-09-30</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><code>#13992</code> [Data Editor] The snapshots that the editor records on every edit store an identical statement only once, rather than once per snapshot. This considerably slows the growth of datasets that are edited often. Duplicates recorded by earlier edits are not removed.</li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><code>#12532</code> [Data Model] Opening a class with many properties could time out.</li>
+<li><code>#14468</code> [GraphQL] When a class and a custom datatype in the shapes had the same local name, every GraphQL request on the dataset failed with a server error. The clash is now reported as a shape error, so the shapes can be corrected.</li>
+<li><code>#14021</code> <code>#14026</code> [Console] An error page could flash briefly while navigating, including when switching between versions of a saved query.</li>
+<li>[Access Control] After signing in through SAML, a visitor could be sent to a wrong URL when the page they came from was given as a full URL.</li>
+<li>[Data Upload] Language tags with an extended language subtag, such as <code>cbk-zam</code>, were rejected.</li>
+<li>[API] A request whose URL could not be parsed answered with a server error instead of <code>400 Bad Request</code>.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[26.9.200¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.9.200</id>
