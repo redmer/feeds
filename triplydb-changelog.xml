@@ -2,9 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/triplydb-changelog/</id>
     <title>TriplyDB Changelog</title>
-    <updated>2026-10-14T05:42:11.587Z</updated>
+    <updated>2026-10-14T17:41:21.810Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/triplydb-changelog/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[26.10.100¶]]></title>
+        <id>https://docs.triply.cc/triplydb-changelog/#26.10.100</id>
+        <link href="https://docs.triply.cc/triplydb-changelog/#26.10.100"/>
+        <updated>2026-10-14T17:41:20.009Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-10-14</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><code>#14832</code> [Access Control] Groups can now carry an access level. The access level of the contents within that group (datasets, queries, stories) may not exceed the access level of the group itself. </li>
+<li><code>#14832</code> [Access Control] Two new admin settings bound the access levels on the instance: a maximum access level, which lowers every more open group and resource to it, and a default access level for new groups and resources. The default is private.</li>
+<li><code>#14832</code> [Access Control] <strong>Breaking</strong> A group created without an explicit access level now starts out private rather than public. A script (TriplyDB.js, TriplyETL, the API) that creates a group and then a public dataset, query or story in it fails with <code>403 Forbidden</code>, because a resource cannot be more open than its group. Pass <code>accessLevel: "public"</code> when creating the group, or have an administrator raise the default access level. Existing groups keep their access level.</li>
+<li><code>#14832</code> [Access Control] Anonymous visitors only see a user account when that user publishes something: a public dataset, saved query, story or SPARQL proxy. This applies to account pages, account listings and group member lists. </li>
+<li><code>#14937</code> [Groups] Deleting a group, deleting a user, or making a group's access level stricter no longer requires clearing everything that stands in the way first. After one confirmation, a stricter access level is applied to everything in the group and its subgroups, deleting a group deletes its subgroups and their contents, and deleting a user deletes the groups they solely own (unless owners of a parent group can take them over). The confirmation counts what will be affected, and nothing changes if you lack permission on any of it.</li>
+<li><code>#14165</code> [Services] Virtuoso services now run Virtuoso 7.2.17. This release comes with the latest patches and security fixes. There are two noticeable changes:<ul>
+<li>a <code>construct</code> query that exceeds the result limit (10,000 statements by default) fails with an error instead of returning a silently truncated result</li>
+<li>computed geometries such as those from <code>bif:st_point</code> no longer carry the <code>geo:wktLiteral</code> datatype.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><code>#14846</code> [SPARQL] Numbers of different datatypes were compared by datatype rather than by value, so <code>"3"^^xsd:decimal = 3</code> was false. Integers that differ only beyond double precision could not be ordered either.</li>
+<li><code>#14952</code> [SPARQL] A property path from a variable back to itself, such as <code>?x :p+ ?x</code>, only matched self-loops and missed longer cycles.</li>
+<li><code>#11481</code> [Data Model] Property shapes with the same <code>sh:path</code> showed up as separate properties, and the Data Editor ignored part of their configuration. This affected application profiles that extend a standard, such as DCAT-AP-NL or SKOS-AP-NL.</li>
+<li><code>#14629</code> [Data Editor] Constraints checked with SPARQL were evaluated against the stored data only.</li>
+<li>[Groups] A group could lose its last enabled owner, or an instance its last enabled administrator, by disabling, demoting or deleting a user.</li>
+<li><code>#13965</code> [Access Control] An owner of a parent group who has a weaker role of their own in a subgroup was shown that subgroup's settings as read-only, although they were allowed to manage it.</li>
+<li><code>#14843</code> [Access Control] Signing in with Google or GitHub failed on instances whose outbound traffic must go through an HTTP proxy.</li>
+<li>[SPARQL] After a query timed out, the next query could fail as well.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[26.9.300¶]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#26.9.300</id>
