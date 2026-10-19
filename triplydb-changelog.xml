@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/triplydb-changelog/</id>
     <title>TriplyDB Changelog</title>
-    <updated>2026-10-19T05:43:23.934Z</updated>
+    <updated>2026-10-19T17:39:23.926Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/triplydb-changelog/favicon.ico</icon>
     <entry>
@@ -941,7 +941,7 @@
 <li><code>#8868</code> [Speedy] Improved the performance of some aggregates queries.</li>
 <li><code>#8834 / #8892</code> [SPARQL-IDE] More errors are now validated by the SPARQL IDE. For example, nested aggregates (<code>count(count(...))</code>) now report as an error.</li>
 <li><code>#8834</code> TriplyDB supports query annotations. An TriplyDB SPARQL annotation looks like this:
-    <pre class="highlight"><code data-highlighted="yes" class="hljs language-shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">! cache: <span class="hljs-literal">false</span></span></code></pre>
+    <pre class="highlight"><code>#! cache: false</code></pre>
     This annotation makes ensure that the TriplyDB cache is bypassed.</li>
 </ul>
 <p><strong>Issues fixed</strong></p>
