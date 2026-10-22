@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-10-21T17:40:12.040Z</updated>
+    <updated>2026-10-22T05:42:35.767Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -1311,9 +1311,28 @@
 <li><code>#14629</code> [Data Editor] Constraints checked with SPARQL were evaluated against the stored data only.</li>
 <li>[Groups] A group could lose its last enabled owner, or an instance its last enabled administrator, by disabling, demoting or deleting a user.</li>
 <li><code>#13965</code> [Access Control] An owner of a parent group who has a weaker role of their own in a subgroup was shown that subgroup's settings as read-only, although they were allowed to manage it.</li>
-<li><code>#14843</code> [Access Control] Signing in with Google or GitHub failed on instances whose outbound traffic must go through an HTTP proxy.</li>
+<li><code>#14843</code> [Access Control] Signing in with Google or GitHub failed on instances whose outbound traffic must go through an HTTP proxy. </li>
 <li>[SPARQL] After a query timed out, the next query could fail as well.</li>
-</ul>]]></content>
+</ul>
+<div class="patch-releases">
+<p><strong>Patch releases</strong></p>
+<ul>
+<li id="26.10.104"><strong>26.10.104</strong> · 2026-10-21<ul>
+<li><code>#14970</code> [SPARQL] A SPARQL update that was cancelled or timed out could leave its query worker occupied for good. Once every worker was occupied, the API answered every query with <code>503 Service Unavailable</code> until it was restarted.</li>
+</ul>
+</li>
+<li id="26.10.103"><strong>26.10.103</strong> · 2026-10-21<ul>
+<li><code>#14967</code> [Data Upload] <strong>Breaking</strong> The root of an uploaded XML, JSON, CSV or TSV file is typed <code>&lt;http://sparql.xyz/facade-x/ns/Root&gt;</code>, where it was typed <code>&lt;http://sparql.xyz/facade-x/ns/root&gt;</code>. Queries that select roots by their class need the new IRI.</li>
+<li><code>#14967</code> [Data Upload] The text of an XML element containing a CDATA section was split into one literal per piece. It is now a single literal, as the <a href="https://w3c-facade-x.github.io/facade-x-specs/dev/mapping-xml.html#Elements">Facade-X XML mapping</a> prescribes.</li>
+<li><code>#14967</code> [Data Upload] A <code>/</code> was appended to an XML namespace name ending in <code>#</code>, so <code>xmlns="http://example.org/ns#"</code> produced IRIs such as <code>http://example.org/ns#/x</code>.</li>
+</ul>
+</li>
+<li id="26.10.102"><strong>26.10.102</strong> · 2026-10-15<ul>
+<li><code>#14958</code> [Data Upload] A large import that produced many graphs failed after indexing had finished.</li>
+</ul>
+</li>
+</ul>
+</div>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.9.300¶ (TriplyDB Changelog)]]></title>
@@ -1333,7 +1352,28 @@
 <li>[Access Control] After signing in through SAML, a visitor could be sent to a wrong URL when the page they came from was given as a full URL.</li>
 <li>[Data Upload] Language tags with an extended language subtag, such as <code>cbk-zam</code>, were rejected.</li>
 <li>[API] A request whose URL could not be parsed answered with a server error instead of <code>400 Bad Request</code>.</li>
-</ul>]]></content>
+</ul>
+<div class="patch-releases">
+<p><strong>Patch releases</strong></p>
+<ul>
+<li id="26.9.307"><strong>26.9.307</strong> · 2026-10-12<ul>
+<li><code>#14843</code> [Access Control] Signing in with Google or GitHub failed on instances whose outbound traffic must go through an HTTP proxy.</li>
+</ul>
+</li>
+<li id="26.9.306"><strong>26.9.306</strong> · 2026-10-08<ul>
+<li><code>#14165</code> [Services] Virtuoso services now run Virtuoso 7.2.17. This release comes with the latest patches and security fixes. There are two noticeable changes:<ul>
+<li>a <code>construct</code> query that exceeds the result limit (10,000 statements by default) fails with an error instead of returning a silently truncated result</li>
+<li>computed geometries such as those from <code>bif:st_point</code> no longer carry the <code>geo:wktLiteral</code> datatype.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="26.9.305"><strong>26.9.305</strong> · 2026-10-07<ul>
+<li><code>#14629</code> [Data Editor] Constraints checked with SPARQL were evaluated against the stored data only.</li>
+</ul>
+</li>
+</ul>
+</div>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.9.200¶ (TriplyDB Changelog)]]></title>
@@ -1667,7 +1707,7 @@
 <li><code>#11035</code> [Editor] Fixed issue where autocomplete results weren't shown.</li>
 <li><code>#11033</code> Fixed form issue, where an error message was not shown to the user</li>
 </ul>
-<details class="older-releases" id="older-releases"><summary>Show 52 older releases</summary>
+<details class="older-releases" id="older-releases"><summary>Show 51 older releases</summary>
 <h2 id="25.12.100">25.12.100<a class="headerlink" href="#25.12.100" title="Permanent link">¶</a></h2>
 <p><strong>Release date:</strong> 2025-12-10</p>
 <p><strong>Features</strong></p>
@@ -1691,14 +1731,6 @@
 <li><code>#10920</code> [SPARQL IDE] Certain pivot visualization errors would make the SPARQL IDE unrecoverable without refreshing the page.</li>
 <li>Fixed serialization handling for RDF literals containing unusual Unicode line-break characters.</li>
 </ul>
-<h2 id="25.10.301">25.10.301<a class="headerlink" href="#25.10.301" title="Permanent link">¶</a></h2>
-<p><strong>Release date:</strong> 2025-11-06</p>
-<p>Patch release for:</p>
-<ul>
-<li><code>#10872</code> [Data model] The search &amp; find functionality may return incomplete results</li>
-<li><code>#10933</code> [Data editor] Copying a resource does not always work, making it impossible to
-  copy an existing resource</li>
-</ul>
 <h2 id="25.10.300">25.10.300<a class="headerlink" href="#25.10.300" title="Permanent link">¶</a></h2>
 <p><strong>Release date:</strong> 2025-10-29</p>
 <p><strong>Features</strong></p>
@@ -1712,6 +1744,17 @@
 <li><code>#10916</code> [Speedy] Fixed query job failures for certain queries that processed very large CONSTRUCT query results. Query jobs now robustly handles arbitrary result set sizes to generate hundreds of millions of triples without memory errors.</li>
 <li><code>#10892</code> [Data Editor] Fixed an issue where editing an instance with a root-only prefix would append a random ID to the IRI, causing the instance to appear as lost. The editor now preserves the original root IRI during edits, preventing unexpected IRI modifications.</li>
 </ul>
+<div class="patch-releases">
+<p><strong>Patch releases</strong></p>
+<ul>
+<li id="25.10.301"><strong>25.10.301</strong> · 2025-11-06<ul>
+<li><code>#10872</code> [Data model] The search &amp; find functionality may return incomplete results</li>
+<li><code>#10933</code> [Data editor] Copying a resource does not always work, making it impossible to
+  copy an existing resource</li>
+</ul>
+</li>
+</ul>
+</div>
 <h2 id="25.10.200">25.10.200<a class="headerlink" href="#25.10.200" title="Permanent link">¶</a></h2>
 <p><strong>Release date:</strong> 2025-10-16</p>
 <p><strong>Features</strong></p>
@@ -2372,19 +2415,6 @@
 </ul>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[25.10.301¶ (TriplyDB Changelog)]]></title>
-        <id>https://docs.triply.cc/triplydb-changelog/#25.10.301</id>
-        <link href="https://docs.triply.cc/triplydb-changelog/#25.10.301"/>
-        <updated>2026-06-26T10:58:42.318Z</updated>
-        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-11-06</p>
-<p>Patch release for:</p>
-<ul>
-<li><code>#10872</code> [Data model] The search &amp; find functionality may return incomplete results</li>
-<li><code>#10933</code> [Data editor] Copying a resource does not always work, making it impossible to
-  copy an existing resource</li>
-</ul>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[25.10.300¶ (TriplyDB Changelog)]]></title>
         <id>https://docs.triply.cc/triplydb-changelog/#25.10.300</id>
         <link href="https://docs.triply.cc/triplydb-changelog/#25.10.300"/>
@@ -2400,7 +2430,18 @@
 <ul>
 <li><code>#10916</code> [Speedy] Fixed query job failures for certain queries that processed very large CONSTRUCT query results. Query jobs now robustly handles arbitrary result set sizes to generate hundreds of millions of triples without memory errors.</li>
 <li><code>#10892</code> [Data Editor] Fixed an issue where editing an instance with a root-only prefix would append a random ID to the IRI, causing the instance to appear as lost. The editor now preserves the original root IRI during edits, preventing unexpected IRI modifications.</li>
-</ul>]]></content>
+</ul>
+<div class="patch-releases">
+<p><strong>Patch releases</strong></p>
+<ul>
+<li id="25.10.301"><strong>25.10.301</strong> · 2025-11-06<ul>
+<li><code>#10872</code> [Data model] The search &amp; find functionality may return incomplete results</li>
+<li><code>#10933</code> [Data editor] Copying a resource does not always work, making it impossible to
+  copy an existing resource</li>
+</ul>
+</li>
+</ul>
+</div>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[25.10.200¶ (TriplyDB Changelog)]]></title>
