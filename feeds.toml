@@ -6,8 +6,16 @@ titleSelector = "h1 a"
 linkSelector = "h1 a"
 
 [triplydb-changelog]
-title = "TriplyDB Changelog"
-url = "https://docs.triply.cc/triplydb-changelog/"
+title = "TriplyDB–Changelog"
+url = "https://docs.triply.cc/reference/changelog/"
+entrySelector = "[role=main] h2"
+titleSelector = "*"
+linkSelector = "a.headerlink"
+sectionEntries = true
+
+[triplydb-tech-changelog]
+title = "TriplyDB–Technical changelog"
+url = "https://docs.triply.cc/reference/technical-changelog/"
 entrySelector = "[role=main] h2"
 titleSelector = "*"
 linkSelector = "a.headerlink"
