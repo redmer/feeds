@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.triply.cc/reference/technical-changelog/</id>
+    <title>TriplyDB–Technical changelog</title>
+    <updated>2026-10-29T15:53:52.840Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <icon>https://docs.triply.cc/reference/technical-changelog/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[26.10.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.10.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.10.200"/>
+        <updated>2026-10-29T15:53:50.762Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-10-28</p>
+<ul>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span>The <code>/oauth/register</code> route is removed, from the API and the ingress: AI assistants identify themselves with a Client ID Metadata Document instead of registering. A migration deletes the authorization codes and refresh tokens of registered clients, so every connected assistant asks its user to authorize it once more. The API fetches a client's metadata document through the configured <code>httpProxy</code>.</li>
+<li>Every line that the API, console, db, service and job pods write to their logs is one JSON entry, including stack traces, <code>debug</code> output and other console output, so a log collector no longer splits or merges entries. The db and service pods log one <code>request</code> entry per request, with its method, path, query, status and duration.</li>
+<li>A new <code>openTelemetry</code> values block reports every error of the API, console, db, flow worker and job pods as an OpenTelemetry exception. Set <code>openTelemetry.otlpEndpoint</code> to an OTLP/HTTP endpoint to enable it, and <code>openTelemetry.headersSecret</code> to a Secret holding the exporter headers. The exporter does not use <code>httpProxy</code>: with network policies enabled, list the egress rules that reach the endpoint in <code>openTelemetry.additionalEgress</code>. Unset, nothing is reported.</li>
+<li>Index jobs get a disk of at least <code>indexJobs.minStorageGb</code> (default <code>5</code>) GB, whatever the size of the upload.</li>
+<li><code>indexJobs.podSchedulingTimeoutSeconds</code> no longer counts the time an index job spends pulling its image.</li>
+<li>New values <code>indexJobs.createHdtConcurrency</code> and <code>indexJobs.mergeHdtConcurrency</code> (both default <code>1</code>) set how many indices one upload, merge or update builds and combines at once. Each takes a CPU core and memory, so raise them only where both are to spare.</li>
+<li>Saving a saved query runs it in the background to collect its statistics. That run is skipped when no Speedy worker is free, so it leaves workers to user queries. This avoids issues where many migrated queries affect the response time of other user queries. The new metric <code>triplydb_api_speedy_skipped_background_runs_total</code> counts the skipped runs.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.10.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.10.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.10.100"/>
+        <updated>2026-10-29T15:53:51.029Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-10-14</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>The values schema rejects several keys that this chart no longer has, so a <code>helm upgrade</code> with a values file that still sets one fails and names the key. Remove or move them before upgrading:<ul>
+<li><code>privacyMode</code>: remove it. Anonymous visitors now see a user account only when that user owns a public dataset, saved query, story or SPARQL proxy, which covers most of what <code>privacyMode: strict</code> did. Only set <code>adminSettings.maxAccessLevel</code> to <code>internal</code> if the instance should hold no public content at all: it makes every public group and resource internal, which cannot be undone automatically.</li>
+<li><code>orchestrator</code>: remove it. The orchestrator <code>Deployment</code>, <code>Service</code> and <code>NetworkPolicy</code> are gone. Their successor, <code>db</code>, is disabled by default (<code>db.enabled: false</code>) and should stay disabled for now. This change will not impact your deployment.</li>
+</ul>
+</li>
+<li><span class="changelog-breaking">Breaking</span>Groups created without an explicit access level are private, where they used to be public. A script (TriplyDB.js, TriplyETL, the API) that creates a group and then a public dataset, query or story in it gets <code>403 Forbidden</code>, because a resource cannot be more open than its group. Pass <code>accessLevel: "public"</code> when creating the group, or raise the default access level in the admin settings (or through <code>adminSettings.defaultAccessLevel</code>). Existing groups keep their access level.</li>
+<li>Virtuoso services run Virtuoso 7.2.17 (previously 7.2.6)</li>
+<li><span class="changelog-breaking">Breaking</span>With <code>networkPolicies.httpProxyEgressOnly</code> enabled and an <code>httpProxy</code> configured, the virtuoso service pods lose their direct HTTP(S) egress as well. Virtuoso sends its outbound traffic through the proxy. This can be breaking, in situations where you have an older version of a virtuoso service running, and a 26.10.100 version (or higher) of the helm chart. In those cases, recreate the virtuoso services, to make sure they are upgraded as well.</li>
+<li>A new <code>adminSettings</code> values block sets admin settings from the deployment configuration: <code>passwordSignup</code>, <code>permittedSignupDomains</code>, <code>enforceTfa</code>, <code>oneActiveSessionOnly</code>, <code>maxAccessLevel</code>, <code>defaultAccessLevel</code>. A setting given here is locked in the admin panel and refused through the API.<ul>
+<li>Lowering <code>adminSettings.maxAccessLevel</code> lowers every more open group and resource to it, which cannot be undone automatically.</li>
+</ul>
+</li>
+<li>New value <code>sparql.blockSandboxProbes</code>, default <code>true</code>. A client whose query tries to reach outside the SPARQL sandbox (<code>sql:</code> IRIs, <code>bif:</code> functions for file, HTTP or system access, a loopback <code>SERVICE</code>) is blocked for an hour from queries that can reach Virtuoso: queries on Virtuoso services and federated queries. They get <code>403 Forbidden</code>. A logged-in client is identified by user, an anonymous one by IP address. </li>
+<li>More outbound traffic honours the configured <code>httpProxy</code>: Google and GitHub sign-in, <code>SERVICE</code> clauses in SHACL rules, targets and conditions in flows, and index jobs fetching remote JSON-LD contexts. Index jobs get an <code>index-job-http-proxy</code> NetworkPolicy when a proxy is configured.</li>
+<li>The API exposes Speedy worker pool metrics on its Prometheus metrics route: <code>triplydb_api_speedy_workers</code>, <code>triplydb_api_speedy_tasks</code>, <code>triplydb_api_speedy_max_workers</code>, <code>triplydb_api_speedy_shed_tasks_total</code> and <code>triplydb_api_speedy_query_queue_wait_seconds</code>. They replace the Analytics page in the admin settings and the <code>/admin/speedyStats</code> API route, which are removed. They are served in the Prometheus format, so Prometheus or any compatible monitoring tool can collect them. Set <code>api.metrics.serviceMonitor.enabled</code> to <code>true</code> (default <code>false</code>; this requires the Prometheus Operator CRDs) to have them scraped. </li>
+</ul>
+<div class="patch-releases">
+<p><strong>Patch releases</strong></p>
+<ul>
+<li id="26.10.105"><strong>26.10.105</strong> · 2026-10-21<ul>
+<li><span class="changelog-breaking">Breaking</span><code>api.metrics.serviceMonitor.networkPolicy</code> and <code>console.metrics.serviceMonitor.networkPolicy</code> are replaced by a single list, <code>networkPolicies.metricsIngressSelectors</code>, of NetworkPolicy peers (<code>podSelector</code>, <code>namespaceSelector</code>, <code>ipBlock</code>) that may scrape the metrics ports of the API and the console. The values schema rejects the old keys. The list is empty by default, which admits no scraper, and it is independent of the <code>serviceMonitor</code> settings, so any collector can be admitted. With a ServiceMonitor enabled, add its scraper to the list, or scraping stops. </li>
+</ul>
+</li>
+</ul>
+</div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.9.300¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.9.300</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.9.300"/>
+        <updated>2026-10-29T15:53:51.047Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-09-30</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>The values schema rejects a number of <code>api.env</code> entries that the API no longer reads, so a <code>helm upgrade</code> with a values file that still sets one fails and names the key. Remove them before upgrading:<ul>
+<li><code>TRIPLY__DEFAULT_QUERY_PAGE_SIZE</code> and <code>TRIPLY__DEFAULT_CONSTRUCT_RETRIES</code>: use the new values <code>sparql.defaultPageSize</code> (default <code>100</code>) and <code>sparql.constructRetries</code> (default <code>10</code>).</li>
+<li><code>TRIPLY__EMAIL_ADDRESSES__NO_REPLY</code> and <code>TRIPLY__EMAIL_ADDRESSES__SUPPORT</code>: use the new values <code>email.addresses.noReply</code> and <code>email.addresses.support</code>. <code>TRIPLY__EMAIL_ADDRESSES__INFO</code> has no replacement: the instance's contact email is used.</li>
+<li><code>TRIPLY__MONGODB__CONNECTION_STRING</code> and <code>TRIPLY__MONGODB__PORT</code>: use <code>mongodb.secret</code>.</li>
+<li><code>TRIPLY__REDIS__HOST</code>, <code>TRIPLY__REDIS__PORT</code> and <code>TRIPLY__REDIS__CONNECTION_TYPE</code>: use <code>redis.*</code>.</li>
+<li><code>TRIPLY__JWT__SECRET</code>, <code>TRIPLY__JWT__EXPIRE</code>, <code>TRIPLY__JWT__RENEW_EVERY</code>, <code>TRIPLY__SOCKET_JWT__SECRET</code> and <code>TRIPLY__SOCKET_JWT__EXPIRE</code>: session lifetimes come from <code>sessions.timeoutsInSeconds</code>, and the signing secrets are always the <code>.jwt_secret</code> and <code>.socket_jwt_secret</code> files on the storage volume, created on first start. An env-supplied secret was already written to that file, so existing sessions stay valid.</li>
+<li><code>TRIPLY__TRIPLYDB_DEMO_LINK</code>, <code>TRIPLY__MAX_QUERY_RESULT_SIZE</code>, <code>TRIPLY__SHOW_MEMORY_USAGE_IN_DASHBOARD</code>, <code>TRIPLY__EMAIL_SILENT</code>, <code>TRIPLY__MIGRATIONS_STARTING_INDEX</code>, and any name starting with <code>TRIPLY__EMAIL_MESSAGE__</code> or <code>TRIPLY__EMAIL_TEMPLATE_PARAMETERS__</code>: remove them.</li>
+</ul>
+</li>
+<li>The console exposes Prometheus metrics at <code>/metrics</code> on a new port, <code>9100</code>. Set <code>console.metrics.serviceMonitor.enabled</code> to <code>true</code> to scrape it (this requires the Prometheus Operator CRDs). <code>interval</code>, <code>scrapeTimeout</code> and <code>labels</code> configure the <code>ServiceMonitor</code>, and <code>console.metrics.serviceMonitor.networkPolicy.prometheusIngressSelector</code> selects the Prometheus pods that the console's NetworkPolicy lets in. By default that is <code>app.kubernetes.io/name: prometheus-agent</code> in the <code>monitoring</code> namespace.</li>
+<li>SPARQL query, SPARQL update, SHACL Validate and SHACL Rules flow tasks run in a child process of their flow worker, so a long evaluation no longer stops the worker from answering its liveness probe.</li>
+</ul>
+<div class="patch-releases">
+<p><strong>Patch releases</strong></p>
+<ul>
+<li id="26.9.307"><strong>26.9.307</strong> · 2026-10-12<ul>
+<li>Google and GitHub sign-in honour the configured <code>httpProxy</code>.</li>
+</ul>
+</li>
+<li id="26.9.306"><strong>26.9.306</strong> · 2026-10-08<ul>
+<li>Virtuoso services run Virtuoso 7.2.17 (previously 7.2.6). Existing services are upgraded when they are recreated.</li>
+<li>Virtuoso's <code>MaxConstructTriples</code> is set from the service's own default instead of following <code>ResultSetMaxRows</code>. </li>
+</ul>
+</li>
+</ul>
+</div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.9.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.9.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.9.200"/>
+        <updated>2026-10-29T15:53:51.059Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-09-16</p>
+<ul>
+<li><code>email.port</code> is now defaulted where the <code>api</code> NetworkPolicy's SMTP egress rule is rendered: <code>465</code> when <code>email.secure</code> is true (the chart default), <code>587</code> otherwise. An unset <code>email.port</code> previously rendered a rule with an empty port and — with <code>email.ip</code> unset — no destination either, which allowed all TCP egress from the API pods to anywhere. If the SMTP server listens on another port, set <code>email.port</code> explicitly, or outgoing mail is blocked at the network layer.</li>
+<li><code>api.pathTimeouts</code> no longer defaults to an empty list. It now carries one entry, granting the graph-store endpoint (<code>^/datasets/[^/]+/[^/]+/graph-store</code>) an hour. A values file that sets <code>api.pathTimeouts</code> itself replaces the default wholesale, so repeat that entry there, or graph-store uploads fall back to <code>api.timeout</code>.</li>
+<li><code>deploymentStrategy</code> (on <code>api</code>, <code>console</code>, <code>console.next</code> and <code>orchestrator</code>) is validated against a schema, which accepts only <code>type</code> (<code>RollingUpdate</code> or <code>Recreate</code>) and <code>rollingUpdate.maxSurge</code>/<code>rollingUpdate.maxUnavailable</code>. Any other key is now rejected rather than passed through to the Deployment.</li>
+<li>The graph store endpoint is a bulk-upload interface, so it is exempt from the general proxy timeout and from <code>api.bodyLimitKb</code>. On nginx that takes two additional Ingress objects, <code>api-graph-store</code> and <code>console-api-proxy-graph-store</code>, which match the path by regex and set request buffering off, no body-size limit, and an hour's timeout. On haproxy the same hour comes from a <code>path_reg</code> ACL in the <code>api</code> Service's backend-config snippet, which needs HAProxy 2.4 or newer for <code>set-timeout client</code>.</li>
+<li>Optional chart values can be set to <code>null</code> to mean "unset", so a value that a shared values file supplies can be cleared without the key being removed.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.9.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.9.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.9.100"/>
+        <updated>2026-10-29T15:53:51.068Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-09-02</p>
+<ul>
+<li>A preview of the redesign is available. To use it, set <code>console.frontends</code> to <code>["classic", "next"]</code>. See the helm chart documentation for more details. For more information about the configuration options of the next interface, run <code>helm show readme triply/triplydb --version 26.9.100</code></li>
+<li>The API deployment likewise now rolls on a change to <code>httpProxy</code>, <code>accountNameBlacklist</code> or <code>mongodb.secret.key</code>, which the API reads once at start-up.</li>
+<li>The backup and restore cron jobs now honour the configured <code>httpProxy</code>, so an instance whose egress goes through a proxy can reach a possibly remote backup location.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.8.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.8.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.8.200"/>
+        <updated>2026-10-29T15:53:51.080Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-08-20</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>The private address ranges that the <code>api</code> and service NetworkPolicies exclude from outbound HTTP(S) have been widened: <code>172.16.0.0/20</code> became the full <code>172.16.0.0/12</code>, and the link-local range <code>169.254.0.0/16</code> is now excluded as well. Requests from API, cron job and service pods to hosts in the newly excluded ranges — federated SPARQL endpoints, "download from URL" sources, webhook targets — are now blocked at the network layer. If such hosts are in use, allow them explicitly through <code>networkPolicies.apiAdditionalEgress</code>, or route them through an HTTP proxy (see below). Service pods have no additional-egress value of their own, so for those a proxy is the only route.</li>
+<li>All ingresses whose latency ceiling is the API's — the <code>api</code> ingresses, and the console and console-beta root and <code>/_api/</code> ingresses — now set an explicit proxy timeout, derived from <code>api.timeout</code> plus two seconds. They previously relied on the ingress controller's default, which is 60 seconds for nginx and 50 seconds for haproxy; on haproxy that silently undercut the default <code>api.timeout</code> of 58 seconds, so the controller severed the connection and returned its own 504 instead of the API's timeout response. If <code>api.timeout</code> is raised, the ingress timeouts now follow it automatically.</li>
+<li>New value <code>httpProxy.interface</code> (default: <code>ip</code>). It selects how the proxy is addressed: <code>ip</code> uses <code>httpProxy.ip</code> as before, while <code>service</code> uses <code>httpProxy.host</code> (the hostname of a Kubernetes Service) together with <code>httpProxy.namespaceLabels</code>, the labels of the namespace the proxy runs in — a service address is translated to a pod address before a NetworkPolicy is evaluated, so the traffic must be permitted by namespace selector rather than by IP. The two sets of fields are mutually exclusive and the schema rejects mixing them. Existing values files that set <code>httpProxy.ip</code> need no change.</li>
+<li>New value <code>networkPolicies.httpProxyEgressOnly</code> (default: <code>false</code>). When enabled, and a proxy is configured, the API pods' direct egress rule to external networks is dropped, so the proxy becomes the only route out. It has no effect when <code>httpProxy</code> is unconfigured.</li>
+<li>More code paths now honour the configured <code>httpProxy</code>: dataset webhooks, avatar and image downloads, JSON-LD context resolution, file parsing in index jobs, and the Jena and Elasticsearch services. Virtuoso services are not covered (used in the context of federative queries), as that requires recreating them.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.8.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.8.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.8.100"/>
+        <updated>2026-10-29T15:53:51.092Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-08-06</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.7.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.7.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.7.200"/>
+        <updated>2026-10-29T15:53:51.101Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-07-21</p>
+<ul>
+<li><code>console.replicas</code> now defaults to <code>2</code> </li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.7.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.7.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.7.100"/>
+        <updated>2026-10-29T15:53:51.112Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-07-06</p>
+<ul>
+<li>New value <code>graphqlDescribeLruCacheSize</code> (default: <code>1000</code>). Independently bounds each of the GraphQL describe route's three in-memory LRU caches (outgoing predicates, incoming predicates, quad lookups). These caches speed up linked-data browsing; raise the value to cache more entries at the cost of memory per API pod.</li>
+<li>The API <code>ServiceMonitor</code> now scrapes a second endpoint, <code>/metrics/pod</code>, on <strong>every</strong> API replica, in addition to the existing single-pod <code>/metrics</code> scrape. It exposes per-pod metrics for the describe LRU caches (which differ per replica); the expensive instance-wide metrics are still scraped from a single pod via hashmod to avoid duplicates. No action is required.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.6.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.6.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.6.100"/>
+        <updated>2026-10-29T15:53:51.121Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-06-11</p>
+<ul>
+<li>Two new values control the query-time vs. index-time trade-off for incremental uploads to existing graphs: <code>indexJobs.mergeRatioThreshold</code> (default: <code>10</code>) and <code>indexJobs.mergeAbsoluteThreshold</code> (default: <code>10000</code>). On an incremental upload, the existing index is folded into a new combined index only when it is at most <code>mergeRatioThreshold</code> times larger than the upload; indices smaller than <code>mergeAbsoluteThreshold</code> statements are always folded in regardless of the ratio. Raise <code>mergeRatioThreshold</code> to favour query speed, lower it to favour index-time on graphs that receive many small uploads. The defaults preserve the previous behaviour for most deployments.</li>
+<li>The <code>adminApiTokens</code> flag now only governs static API tokens. OAuth access tokens are short-lived (1h) credentials minted through an interactive authorization grant and are treated like a web session, so they always carry admin privileges for admin users regardless of this flag. No action is required.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.5.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.5.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.5.200"/>
+        <updated>2026-10-29T15:53:51.132Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-05-28</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>The cert-manager HTTP-01 solver network policy is no longer hardcoded to the <code>ingress-nginx</code> namespace. The <code>allow-cert-manager-resolver</code> NetworkPolicy now derives its allowed ingress sources from the new <code>networkPolicies.ingressSelector</code> value and from any <code>additionalIngress[].networkPolicySelector</code> entries. If you deploy with network policies enabled and use cert-manager HTTP-01 ACME challenges behind an nginx ingress controller, you must now set <code>networkPolicies.ingressSelector</code> to a peer matching your ingress controller's namespace, e.g. <code>{ namespaceSelector: { matchLabels: { kubernetes.io/metadata.name: ingress-nginx } } }</code>. Without it, the ACME HTTP-01 challenge can no longer reach the solver pod and certificate issuance/renewal will fail. The now-redundant <code>acme.cert-manager.io/http01-ingress-class</code> ingress annotation was removed as part of this rework.</li>
+<li>New value <code>api.pathTimeouts</code> (default: <code>[]</code>). Per-path timeout overrides: each entry maps a path <code>prefix</code> (must start with <code>/</code>) to a <code>timeout</code> in milliseconds. The longest matching prefix wins; when no prefix matches, the existing <code>api.timeout</code> applies. </li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.5.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.5.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.5.100"/>
+        <updated>2026-10-29T15:53:51.141Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-05-14</p>
+<ul>
+<li>New values block <code>oauthServer</code> with property <code>maxRefreshTokenInactivityDays</code> (default: <code>90</code>). Configures the inactivity window for OAuth refresh tokens — each successful rotation resets the expiry to now + this many days. After this many days of inactivity the token expires and the user must re-consent.</li>
+<li>The API ingress now exposes three new public OAuth 2.1 endpoints: <code>/oauth/register</code>, <code>/oauth/token</code>, and <code>/oauth/revoke</code>. These are used by OAuth clients. No action needed unless you have custom ingress overrides that restrict the routes exposed by the API.</li>
+<li>Resolved a janitor regression that caused file cleanup to conflict with parallel TriplyDB operations and surface as transient errors in production.</li>
+<li>Silenced an unactionable Redis subscriber error that was noisy in logs without indicating an actual failure.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.4.300¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.4.300</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.4.300"/>
+        <updated>2026-10-29T15:53:51.151Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-04-30</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>The <code>addUser</code> bin script flag <code>-r, --role &lt;role&gt;</code> has been replaced with <code>-a, --admin &lt;admin&gt;</code>, where the value is either <code>site</code> or <code>super</code>. Provisioning scripts that invoke <code>addUser</code> with <code>--role</code> must be updated to the new flag.</li>
+<li><span class="changelog-breaking">Breaking</span>The <code>addOrg</code> and <code>deleteOrg</code> bin scripts have been renamed to <code>addGroup</code> and <code>deleteGroup</code> as part of the organizations-to-groups rename. Update any operator scripts or runbooks that invoke these binaries.</li>
+<li>HAProxy ingress on OpenShift: the <code>haproxy.router.openshift.io/rewrite-target</code> annotation for the <code>/_api/web/auth/local/</code> route now uses <code>/web/auth/local/</code> instead of <code>/</code>, fixing an authentication redirect bug on OpenShift HAProxy Router deployments. The default rewrite-target for other <code>/_api/...</code> routes remains <code>/</code>. No action is required for nginx or HAProxy community-controller deployments.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.4.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.4.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.4.200"/>
+        <updated>2026-10-29T15:53:51.160Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-04-16</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>The <code>console.theme.material</code> property has been removed from the values file. MUI theme colors are now derived from the existing <code>console.theme</code> properties directly (e.g., <code>console.theme.primary</code>, <code>console.theme.secondary</code>). If you have <code>console.theme.material</code> set in your values file, remove it — the deployment will fail validation otherwise.</li>
+<li>New value <code>flows.nodejsMemoryLimit</code> (default: <code>5120</code>, in MB). Controls the V8 <code>--max-old-space-size</code> for flow worker processes. Previously this was hardcoded. Increase this value if flow tasks process large datasets and run into out-of-memory errors.</li>
+<li>Auth rate limiting ingress rules now target only <code>/web/auth/local/</code> paths instead of the broader <code>/web/</code> prefix. This prevents rate limiting of innocuous endpoints like logout, OAuth redirects, and session loading. No action needed unless you have custom ingress overrides referencing <code>/web/</code> auth paths.</li>
+<li>Added <code>/web/</code>, <code>/__sm</code>, and <code>/sitemap.xml</code> path routing to the console ingress for proper request routing.</li>
+<li>HAProxy ingress improvements: updated rate limiting burst documentation and annotations for better accuracy.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.4.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.4.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.4.100"/>
+        <updated>2026-10-29T15:53:51.169Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-04-01</p>
+<ul>
+<li>Network policies for the API pod have been updated. A new rule allows API-to-API pod communication on the worker port, and <code>additionalIngress</code> entries with a <code>networkPolicySelector</code> are now included in ingress rules for both API and console pods. If you maintain custom network policies that override the chart defaults, review the updated templates.</li>
+<li>The backup job now passes the <code>MONGO_DB</code> environment variable, sourced from the MongoDB secret (<code>mongodb-database</code> key) for external deployments or from <code>mongodb.db</code> for in-cluster deployments. This fixes backup failures when the database name differs from the default.</li>
+<li>Removed the <code>serverSelectionTimeoutMS</code> MongoDB connection option. The default MongoDB driver timeout is now used, which improves behavior in environments with transient DNS or network delays.</li>
+<li>Fixed JSON log timestamps to use the correct format.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.3.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.3.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.3.200"/>
+        <updated>2026-10-29T15:53:51.178Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-03-19</p>
+<ul>
+<li>Simplified the ingress path rewrite annotations for the <code>/_api/</code> prefix. The generic <code>ingress-annotation-rewrite</code> helper has been replaced with a dedicated <code>ingress-annotation-strip-api-prefix</code> helper. This change is functionally equivalent for both nginx and HAProxy controllers, but if you have custom ingress overrides referencing the old helper name, they will need to be updated.</li>
+<li>Added IDP certificate caching for SAML authentication. SAML identity provider certificates are now cached locally and refreshed periodically by a janitor task, reducing the number of outbound requests during authentication and improving resilience when the IDP metadata endpoint is temporarily unavailable.</li>
+<li>Fixed the role attribute overwrite behavior for legacy SAML configurations.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.3.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.3.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.3.100"/>
+        <updated>2026-10-29T15:53:51.199Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-03-04</p>
+<ul>
+<li>New value <code>api.bodyLimitKb</code> has been added (default: <code>5120</code>). This controls the maximum request body size in kilobytes for JSON, form, text, and SPARQL POST requests on external API routes. </li>
+<li>Fixed an issue where the refresh-queries cronjob could hang indefinitely on certain saved queries, causing the entire cronjob to fail silently.</li>
+<li>HAProxy rate limiting now correctly handles burst configuration by extending the rate-limit period, and both HAProxy and nginx now explicitly return HTTP 429 status codes for rate-limited requests.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.2.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.2.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.2.200"/>
+        <updated>2026-10-29T15:53:51.211Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-02-18</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>The <code>ingress.proxyCacheName</code> values is unused and has been removed. No
+  migration needed, except for removing this property if it's set.</li>
+<li>Next to Nginx, we now include full support for HAProxy ingress controllers as well.
+Ingress templates have been refactored to support both nginx and HAProxy ingress controllers. A new <code>ingress.controller</code> property (default: <code>"nginx"</code>) controls which controller-specific annotations are generated. HAProxy support covers both the HAProxy Kubernetes Ingress Controller (<code>haproxy.org/*</code>) and OpenShift HAProxy Router (<code>haproxy.router.openshift.io/*</code>).</li>
+<li>Fixed the console-api-proxy ingress rewrite rule for nginx. The path type is now <code>ImplementationSpecific</code> with regex pattern <code>/_api/(.*)</code> instead of a plain <code>Prefix</code> match, ensuring the rewrite-target correctly strips the <code>/_api/</code> prefix.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.2.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.2.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.2.100"/>
+        <updated>2026-10-29T15:53:51.221Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-02-04</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.1.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.1.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.1.200"/>
+        <updated>2026-10-29T15:53:51.230Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-01-21</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.1.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.1.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.1.100"/>
+        <updated>2026-10-29T15:53:51.240Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-01-07</p>
+<ul>
+<li>API network policy updated to allow inter-API pod communication on the private port. API pods can now send requests to other API pods within the same namespace. This change supports distributed coordination features.</li>
+<li>Kubernetes lease manager watch restart delay reduced from 5-10 seconds to 1 second, improving leader election responsiveness and reducing failover time for distributed coordination tasks.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.12.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.12.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.12.100"/>
+        <updated>2026-10-29T15:53:51.249Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-12-10</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.11.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.11.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.11.200"/>
+        <updated>2026-10-29T15:53:51.262Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-11-27</p>
+<ul>
+<li>Added ServiceMonitor support for environments with a Prometheus Operator deployement. Configure via <code>api.metrics.serviceMonitor.enabled</code> (default: <code>false</code>). When enabled, a ServiceMonitor resource is created with configurable scrape interval, timeout, and labels, allowing automatic scraping of TriplyDB metrics.</li>
+<li>API network policy updated to allow Prometheus ingress when ServiceMonitor is enabled. The network policy configuration is specified via <code>api.metrics.serviceMonitor.networkPolicy.prometheusIngressSelector</code> to specify which namespace/pod combination is allowed to scrape the metrics endpoint.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.11.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.11.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.11.100"/>
+        <updated>2026-10-29T15:53:51.272Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-11-12</p>
+<ul>
+<li>API service account RBAC permissions expanded: added <code>deployments</code> resource permissions
+  (<code>get</code>, <code>list</code>) for <code>apps</code> API group better monitoring and management.</li>
+<li>PersistentVolumeClaim and Service creation now support owner references for proper garbage collection. This ensures Kubernetes automatically cleans up related resources when parent resources are deleted.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.10.300¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.10.300</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.10.300"/>
+        <updated>2026-10-29T15:53:51.281Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-10-29</p>
+<ul>
+<li>SAML authentication attribute mapping configuration changed. The <code>auth.saml[*].attributeMappings</code> structure now supports additional properties for attribute updates. Added <code>allowOverwrite</code> boolean property to control whether attributes can be updated on subsequent logins (default: <code>false</code>). Added <code>expiresAt</code> and <code>displayedName</code> attribute mappings for temporary user accounts. Existing SAML configurations will continue to work as is</li>
+<li>Added <code>indexJobs.maxJsonLdFileSizeMb</code> configuration property (default: <code>50</code>). This limits the maximum size of JSON-LD files during index job processing to prevent memory issues with very large files. The environment API variable <code>TRIPLY__JSONLD_MAX_BYTES_SIZE</code> is not allowed anymore.</li>
+<li>Removed <code>speedy.maxNumberOfStatementsInMemory</code> configuration property. Memory handling for SPARQL operations is now managed automatically without a fixed statement limit, improving support for large result sets.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.10.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.10.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.10.200"/>
+        <updated>2026-10-29T15:53:51.291Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-10-16</p>
+<ul>
+<li>Node.js upgraded from version 22 to version 24. All TriplyDB container images now use Node.js 24 as the base runtime. This affects all pods including API, console, orchestrator, and job runners. </li>
+<li>Redis upgraded from version 7.4.2 to 8.2.2 to address security vulnerabilities. Note that the security vulnerability in question could not have been abused in the context of the TriplyDB deployment.</li>
+<li>Added <code>indexJobs.legacyDelimitedFormat</code> configuration property (default: <code>true</code>). This controls CSV/TSV import behavior. When set to <code>true</code>, uses the legacy simple format. When set to <code>false</code>, uses the new format which supports more complex table structures but produces more verbose RDF output. </li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.10.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.10.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.10.100"/>
+        <updated>2026-10-29T15:53:51.300Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-10-02</p>
+<ul>
+<li>API service account RBAC permissions changed: added <code>leases</code> resource permissions (<code>get</code>, <code>list</code>, <code>watch</code>, <code>create</code>, <code>update</code>, <code>patch</code>) for coordination.k8s.io API group. This enables proper Kubernetes leader election coordination for watching job events.</li>
+<li>Orchestrator service account removed: orchestrator pods now use default namespace permissions instead of dedicated service account. The orchestrator deployment no longer specifies a <code>serviceAccountName</code>.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.9.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.9.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.9.100"/>
+        <updated>2026-10-29T15:53:51.309Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-09-18</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.8.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.8.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.8.200"/>
+        <updated>2026-10-29T15:53:51.321Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-08-28</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.08.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.08.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.08.100"/>
+        <updated>2026-10-29T15:53:51.330Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-08-06</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.7.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.7.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.7.100"/>
+        <updated>2026-10-29T15:53:51.340Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-07-16</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.6.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.6.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.6.200"/>
+        <updated>2026-10-29T15:53:51.349Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-06-26</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.6.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.6.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.6.100"/>
+        <updated>2026-10-29T15:53:51.359Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-06-05</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.5.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.5.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.5.100"/>
+        <updated>2026-10-29T15:53:51.368Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-05-14</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.4.300¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.4.300</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.4.300"/>
+        <updated>2026-10-29T15:53:51.379Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-04-28</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.4.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.4.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.4.200"/>
+        <updated>2026-10-29T15:53:51.393Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-04-16</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.4.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.4.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.4.100"/>
+        <updated>2026-10-29T15:53:51.406Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-04-03</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.3.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.3.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.3.200"/>
+        <updated>2026-10-29T15:53:51.419Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-04-20</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.3.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.3.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.3.100"/>
+        <updated>2026-10-29T15:53:51.435Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-03-06</p>
+<p><strong>Features</strong></p>
+<ul>
+<li>SAML can now be configured through native helm values, instead of using environment variables for the API pod. I.e., A configuration like this:
+<pre class="highlight"><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">api:</span>
+  <span class="hljs-attr">env:</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__ENTRY_POINT:</span> <span class="hljs-string">some_entrypoint_url</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__IDP:</span> <span class="hljs-string">some_idp_id</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__EMAIL__KEY:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__NAME__KEY:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__ISSUER:</span> <span class="hljs-string">some_issuer_id</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__LABEL:</span> <span class="hljs-string">Login</span> <span class="hljs-string">with</span> <span class="hljs-string">SAML</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__SIGNATURE_ALGORITHM:</span> <span class="hljs-string">RSA_SHA256</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__SUPPORT_IDP_LOGOUT:</span> <span class="hljs-string">"false"</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__WANT_AUTHN_RESPONSE_SIGNED:</span> <span class="hljs-string">"false"</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__IDP_CERT:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">CERT</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__PRIVATE_KEY:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">PRIVATE_KEY</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__PUBLIC_CERT:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">SIGNING_CERT</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__DECRYPTION_CERT:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">DECRYPTION_CERT</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__DECRYPTION_PVK:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">DECRYPTION_PVK</span></code></pre>
+will now be set like this:
+<pre class="highlight"><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">auth:</span>
+  <span class="hljs-attr">saml:</span>
+    <span class="hljs-attr">some_idp_id:</span>
+      <span class="hljs-attr">entryPoint:</span> <span class="hljs-string">some_entrypoint_url</span>
+      <span class="hljs-attr">issuer:</span> <span class="hljs-string">some_issuer_id</span>
+      <span class="hljs-attr">label:</span> <span class="hljs-string">Login</span> <span class="hljs-string">with</span> <span class="hljs-string">SAML</span>
+      <span class="hljs-attr">signatureAlgorithm:</span> <span class="hljs-string">RSA_SHA256</span>
+      <span class="hljs-attr">idpAttributeMappings:</span>
+        <span class="hljs-attr">email:</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span>
+        <span class="hljs-attr">name:</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</span>
+      <span class="hljs-attr">additionalConfig:</span>
+        <span class="hljs-attr">wantAuthnResponseSigned:</span> <span class="hljs-literal">false</span>
+        <span class="hljs-attr">supportIdpLogout:</span> <span class="hljs-literal">false</span>
+      <span class="hljs-attr">idpCertSecret:</span>
+        <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+        <span class="hljs-attr">key:</span> <span class="hljs-string">CERT</span>
+      <span class="hljs-attr">spCertSecret:</span>
+        <span class="hljs-attr">name:</span> <span class="hljs-string">saml-sp-certs</span></code></pre></li>
+</ul>
+<p>Note that:</p>
+<ul>
+<li>The IDP ID is now the key of the helm values object.</li>
+<li>Certificates can only be set through secrets. For the IDP certificates this can be any secret with any field. For the SP certificate we expect a secret of type <code>TLS</code>, containing the private key and the public certificate.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.2.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.2.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.2.200"/>
+        <updated>2026-10-29T15:53:51.446Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-02-20</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.2.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.2.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.2.100"/>
+        <updated>2026-10-29T15:53:51.456Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-02-06</p>
+<ul>
+<li>The type <code>tdbServices.customLabels</code> changed from an array to an object. I.e., change
+  this:
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-vbnet"><span class="hljs-symbol">tdbServices:</span>
+  customLabels:
+  - VAL=<span class="hljs-keyword">KEY</span></code></pre>
+to:
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-yaml"><span class="hljs-attr">tdbServices:</span>
+  <span class="hljs-attr">customLabels:</span>
+    <span class="hljs-attr">VAL:</span> <span class="hljs-string">KEY</span></code></pre></li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.1.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.1.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.1.200"/>
+        <updated>2026-10-29T15:53:51.468Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-01-23</p>
+<ul>
+<li><code>disablePreUpgradeHook</code> setting is no longer needed. If you have set this, you can
+  safely remove it</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25.1.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#25.1.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#25.1.100"/>
+        <updated>2026-10-29T15:53:51.479Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2025-01-09</p>
+<ul>
+<li><code>indexJobs.storageClassName</code> and <code>queryJobs.storageClassName</code> are both required properties now.</li>
+<li><code>tdbServices.podNodeAffinity</code> and <code>tdbServices.podTolerations</code> now take a yaml string as
+  argument, instead of a yaml object.</li>
+<li><code>indexJobs.chunkSize</code> must now be a number and not a string</li>
+<li>Some properties from the values file are now propagated to the console and API via a
+  configmap. This change <em>only</em> affects on-premise deployments where the helm manifests
+  are post-processed and manipulated.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.12.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.12.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.12.200"/>
+        <updated>2026-10-29T15:53:51.491Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-12-18</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.12.104¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.12.104</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.12.104"/>
+        <updated>2026-10-29T15:53:51.501Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-12-06</p>
+<ul>
+<li>The <code>.disableNetworkPolicies</code> property is removed. Instead, use the
+  <code>networkPolicies.enabled</code> property.</li>
+<li>The API and console apply stricter network policies. As a consequence, you will need to
+  specify a source selector that references your ingress. See the <a href="https://kubernetes.io/docs/concepts/services-networking/network-policies/#behavior-of-to-and-from-selectors">kubernetes
+  documentation</a>
+ for more info on such selectors. Specify this selector in
+  <code>networkPolicies.ingressSelector</code>. An example definition is the following:</li>
+</ul>
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-yaml"><span class="hljs-attr">networkPolicies:</span>
+  <span class="hljs-attr">ingressSelector:</span>
+    <span class="hljs-attr">namespaceSelector:</span>
+      <span class="hljs-attr">matchLabels:</span>
+        <span class="hljs-attr">kubernetes.io/metadata.name:</span> <span class="hljs-string">ingress-nginx</span></code></pre>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.11.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.11.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.11.200"/>
+        <updated>2026-10-29T15:53:51.511Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-11-22</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.11.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.11.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.11.100"/>
+        <updated>2026-10-29T15:53:51.523Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-11-08</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.10.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.10.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.10.200"/>
+        <updated>2026-10-29T15:53:51.534Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-10-25</p>
+<p>The <code>.defaultImageRegistry</code> and <code>triplydbImageRegistry</code> fields are now removed.
+If you used these fields, then you should instead reference the full image path (without the tag) for the images.</p>
+<p>If you used <code>.defaultImageRegistry</code> with a custom registry, then set the full image tags
+for these keys:</p>
+<ul>
+<li><code>mongodb.image</code></li>
+<li><code>redis.image</code></li>
+<li><code>kubernetesWaitFor.image</code></li>
+</ul>
+<p>If you used <code>.triplydbImageRegistry</code> with a custom registry, then set the full image tags
+for these keys:</p>
+<ul>
+<li><code>api.image</code></li>
+<li><code>console.image</code></li>
+<li><code>orchestrator.image</code></li>
+<li><code>indexJobs.image</code></li>
+<li><code>queryJobs.image</code></li>
+<li><code>tdbServices.virtuoso.image</code></li>
+<li><code>tdbServices.jena.image</code></li>
+<li><code>tdbServices.elastic.image</code></li>
+<li><code>tdbServices.blazegraph.image</code></li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.10.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.10.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.10.100"/>
+        <updated>2026-10-29T15:53:51.545Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-10-11</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.9.200¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.9.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.9.200"/>
+        <updated>2026-10-29T15:53:51.556Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2024-09-27</p>
+<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.9.100¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.9.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.9.100"/>
+        <updated>2026-10-29T15:53:51.570Z</updated>
+        <content type="html"><![CDATA[<p>The version scheme for the TriplyDB helm charts changed. This is now reflected in this technical changelog.</p>
+<ul>
+<li><code>indexingChunkSize</code> (if present) should move to <code>indexJobs.chunkSize</code></li>
+<li><code>queryJobs.nodeMemoryLimitInGb</code> is renamed to <code>queryJobs.nodejsMemoryLimitInGb</code></li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.08.1¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.08.1</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.08.1"/>
+        <updated>2026-10-29T15:53:51.582Z</updated>
+        <content type="html"><![CDATA[<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.08.0¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.08.0</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.08.0"/>
+        <updated>2026-10-29T15:53:51.592Z</updated>
+        <content type="html"><![CDATA[<p>The <code>service-orchestrator</code> key is renamed to <code>orchestrator</code></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.07.1¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.07.1</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.07.1"/>
+        <updated>2026-10-29T15:53:51.602Z</updated>
+        <content type="html"><![CDATA[<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.07.0¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.07.0</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.07.0"/>
+        <updated>2026-10-29T15:53:51.612Z</updated>
+        <content type="html"><![CDATA[<h3 id="saml">SAML<a class="headerlink" href="#saml" title="Permanent link">¶</a></h3>
+<p>SAML configurations changed as follows:</p>
+<ul>
+<li><code>api.env.TRIPLY__SAML__0__SIGNING_CERT</code> should be renamed to <code>TRIPLY__SAML__0__PUBLIC_CERT</code></li>
+<li><code>api.env.TRIPLY__SAML__0__CERT</code> should be renamed to <code>TRIPLY__SAML__0__IDP_CERT</code></li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.06.1¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.06.1</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.06.1"/>
+        <updated>2026-10-29T15:53:51.624Z</updated>
+        <content type="html"><![CDATA[<p>None</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24.06.0¶]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#24.06.0</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#24.06.0"/>
+        <updated>2026-10-29T15:53:51.640Z</updated>
+        <content type="html"><![CDATA[<h3 id="version-tags">Version tags<a class="headerlink" href="#version-tags" title="Permanent link">¶</a></h3>
+<ul>
+<li>Version tags changed. If you have hardcoded versions in your values file (e.g. <code>api.version</code> or <code>console.version</code>), then remove the <code>-k8</code> postfix. E.g., change <code>24.05.1-k8</code> to <code>24.05.1</code></li>
+<li>The <code>tdbServices.[service-name].tag</code> property changed to <code>tdbServices.[service-name].version</code></li>
+</ul>]]></content>
+    </entry>
+</feed>
