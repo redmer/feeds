@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-10-30T05:36:07.051Z</updated>
+    <updated>2026-10-30T17:36:14.207Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -1667,7 +1667,16 @@ glance</a>.</p>
 <li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A SPARQL Update task could fail for large queries. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14686</span></li>
 <li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>The saved-query selector of a SPARQL Update task hid update queries that use an API variable, although they ran. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11493</span></li>
 <li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>The suggestions in the flow builder did not reflect a change to a dataset, query or other resource a flow uses until the page was reloaded. <span class="changelog-issues" title="Issue number, to quote when you contact support">#12909</span></li>
-</ul>]]></content>
+</ul>
+<div class="patch-releases">
+<p><strong>Patch releases</strong></p>
+<ul>
+<li id="26.10.201"><strong>26.10.201</strong> · 2026-10-30<ul>
+<li><span class="changelog-area">SPARQL</span>Small optimizations to text search in SPARQL queries.</li>
+</ul>
+</li>
+</ul>
+</div>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.10.100¶ (TriplyDB–Changelog)]]></title>
