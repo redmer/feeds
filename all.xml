@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-10-30T17:36:14.207Z</updated>
+    <updated>2026-10-31T05:35:03.623Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -2652,7 +2652,7 @@ glance</a>.</p>
 <li><span class="changelog-area">Speedy</span>Improved the performance of some aggregates queries. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8868</span></li>
 <li><span class="changelog-area">SPARQL-IDE</span>More errors are now validated by the SPARQL IDE. For example, nested aggregates (<code>count(count(...))</code>) now report as an error. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8834 · #8892</span></li>
 <li>TriplyDB supports query annotations. An TriplyDB SPARQL annotation looks like this:
-    <pre class="highlight"><code data-highlighted="yes" class="hljs language-shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">! cache: <span class="hljs-literal">false</span></span></code></pre>
+    <pre class="highlight"><code>#! cache: false</code></pre>
     This annotation makes ensure that the TriplyDB cache is bypassed. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8834</span></li>
 </ul>
 <p><strong>Issues fixed</strong></p>
