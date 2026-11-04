@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/reference/technical-changelog/</id>
     <title>TriplyDB–Technical changelog</title>
-    <updated>2026-11-04T05:35:38.636Z</updated>
+    <updated>2026-11-04T17:35:19.600Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/reference/technical-changelog/favicon.ico</icon>
     <entry>
@@ -459,63 +459,63 @@ Ingress templates have been refactored to support both nginx and HAProxy ingress
 <p><strong>Features</strong></p>
 <ul>
 <li>SAML can now be configured through native helm values, instead of using environment variables for the API pod. I.e., A configuration like this:
-<pre class="highlight"><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">api:</span>
-  <span class="hljs-attr">env:</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__ENTRY_POINT:</span> <span class="hljs-string">some_entrypoint_url</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__IDP:</span> <span class="hljs-string">some_idp_id</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__EMAIL__KEY:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__NAME__KEY:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__ISSUER:</span> <span class="hljs-string">some_issuer_id</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__LABEL:</span> <span class="hljs-string">Login</span> <span class="hljs-string">with</span> <span class="hljs-string">SAML</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__SIGNATURE_ALGORITHM:</span> <span class="hljs-string">RSA_SHA256</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__SUPPORT_IDP_LOGOUT:</span> <span class="hljs-string">"false"</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__WANT_AUTHN_RESPONSE_SIGNED:</span> <span class="hljs-string">"false"</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__IDP_CERT:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">CERT</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__PRIVATE_KEY:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">PRIVATE_KEY</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__PUBLIC_CERT:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">SIGNING_CERT</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__DECRYPTION_CERT:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">DECRYPTION_CERT</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__DECRYPTION_PVK:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">DECRYPTION_PVK</span></code></pre>
+<pre class="highlight"><code class="language-yaml">api:
+  env:
+    TRIPLY__SAML__0__ENTRY_POINT: some_entrypoint_url
+    TRIPLY__SAML__0__IDP: some_idp_id
+    TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__EMAIL__KEY: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+    TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__NAME__KEY: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
+    TRIPLY__SAML__0__ISSUER: some_issuer_id
+    TRIPLY__SAML__0__LABEL: Login with SAML
+    TRIPLY__SAML__0__SIGNATURE_ALGORITHM: RSA_SHA256
+    TRIPLY__SAML__0__SUPPORT_IDP_LOGOUT: "false"
+    TRIPLY__SAML__0__WANT_AUTHN_RESPONSE_SIGNED: "false"
+    TRIPLY__SAML__0__IDP_CERT:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: CERT
+    TRIPLY__SAML__0__PRIVATE_KEY:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: PRIVATE_KEY
+    TRIPLY__SAML__0__PUBLIC_CERT:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: SIGNING_CERT
+    TRIPLY__SAML__0__DECRYPTION_CERT:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: DECRYPTION_CERT
+    TRIPLY__SAML__0__DECRYPTION_PVK:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: DECRYPTION_PVK</code></pre>
 will now be set like this:
-<pre class="highlight"><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">auth:</span>
-  <span class="hljs-attr">saml:</span>
-    <span class="hljs-attr">some_idp_id:</span>
-      <span class="hljs-attr">entryPoint:</span> <span class="hljs-string">some_entrypoint_url</span>
-      <span class="hljs-attr">issuer:</span> <span class="hljs-string">some_issuer_id</span>
-      <span class="hljs-attr">label:</span> <span class="hljs-string">Login</span> <span class="hljs-string">with</span> <span class="hljs-string">SAML</span>
-      <span class="hljs-attr">signatureAlgorithm:</span> <span class="hljs-string">RSA_SHA256</span>
-      <span class="hljs-attr">idpAttributeMappings:</span>
-        <span class="hljs-attr">email:</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span>
-        <span class="hljs-attr">name:</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</span>
-      <span class="hljs-attr">additionalConfig:</span>
-        <span class="hljs-attr">wantAuthnResponseSigned:</span> <span class="hljs-literal">false</span>
-        <span class="hljs-attr">supportIdpLogout:</span> <span class="hljs-literal">false</span>
-      <span class="hljs-attr">idpCertSecret:</span>
-        <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-        <span class="hljs-attr">key:</span> <span class="hljs-string">CERT</span>
-      <span class="hljs-attr">spCertSecret:</span>
-        <span class="hljs-attr">name:</span> <span class="hljs-string">saml-sp-certs</span></code></pre></li>
+<pre class="highlight"><code class="language-yaml">auth:
+  saml:
+    some_idp_id:
+      entryPoint: some_entrypoint_url
+      issuer: some_issuer_id
+      label: Login with SAML
+      signatureAlgorithm: RSA_SHA256
+      idpAttributeMappings:
+        email:
+          key: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+        name:
+          key: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
+      additionalConfig:
+        wantAuthnResponseSigned: false
+        supportIdpLogout: false
+      idpCertSecret:
+        name: saml-credentials-0
+        key: CERT
+      spCertSecret:
+        name: saml-sp-certs</code></pre></li>
 </ul>
 <p>Note that:</p>
 <ul>
@@ -540,13 +540,13 @@ will now be set like this:
 <ul>
 <li>The type <code>tdbServices.customLabels</code> changed from an array to an object. I.e., change
   this:
-<pre class="highlight"><code data-highlighted="yes" class="hljs language-vbnet"><span class="hljs-symbol">tdbServices:</span>
+<pre class="highlight"><code>tdbServices:
   customLabels:
-  - VAL=<span class="hljs-keyword">KEY</span></code></pre>
+  - VAL=KEY</code></pre>
 to:
-<pre class="highlight"><code data-highlighted="yes" class="hljs language-yaml"><span class="hljs-attr">tdbServices:</span>
-  <span class="hljs-attr">customLabels:</span>
-    <span class="hljs-attr">VAL:</span> <span class="hljs-string">KEY</span></code></pre></li>
+<pre class="highlight"><code>tdbServices:
+  customLabels:
+    VAL: KEY</code></pre></li>
 </ul>]]></content>
     </entry>
     <entry>
