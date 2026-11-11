@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/reference/changelog/</id>
     <title>TriplyDB–Changelog</title>
-    <updated>2026-11-11T05:36:00.509Z</updated>
+    <updated>2026-11-11T17:35:20.939Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/reference/changelog/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[26.11.100¶]]></title>
+        <id>https://docs.triply.cc/reference/changelog/#26.11.100</id>
+        <link href="https://docs.triply.cc/reference/changelog/#26.11.100"/>
+        <updated>2026-11-11T17:35:16.976Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-11-11</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><span class="changelog-area">Assets</span><span class="changelog-breaking">Breaking</span>An asset keeps its 10 most recent versions. Uploading a new version of an asset that already has 10 removes the oldest one. Assets that have more versions are trimmed to their 10 most recent versions the night after the upgrade: download any older version you want to keep before then. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15058</span></li>
+<li><span class="changelog-area">Admin Settings</span>A new setting, "Email admins on upgrade", emails the instance's administrators whenever the instance is upgraded to a newer release or patch, with a link to this changelog. It is off by default. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15051</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>Show the SHACL Validation results of a flow task with a message per violation. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14928</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A new Save Variable to Asset task saves the value of a flow variable as an asset of a dataset, as a <code>.txt</code>, <code>.csv</code>, <code>.json</code>, <code>.html</code> or <code>.svg</code> file. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14945</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A story or description can include a button that runs a flow, and the progress of its run. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14926</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">MCP</span>AI assistants can add an asset to a dataset, from a file at a URL, and read an asset.</li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Console</span>In the redesigned console, the error page names the instance's contact address, signing in with an account that does not exist leads to a page that offers to register, and links to the instance show a preview image when shared. It also has fixes from customer testing. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14943 · #14988 · #15038 · #15041</span></li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><span class="changelog-area">SPARQL</span>A triple pattern with only its predicate as a variable, such as <code>ex:a ?p ex:b</code>, failed the query. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15006</span></li>
+<li><span class="changelog-area">Saved Queries</span><span class="changelog-breaking">Breaking</span>The arguments of a saved query's API were not always fully validated. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15060</span></li>
+<li><span class="changelog-area">Data Upload</span>An import from a URL that does not report the file's size showed no progress until the download had finished. It shows how much has been downloaded so far. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14998</span></li>
+<li><span class="changelog-area">Access Control</span>A SAML sign-in that failed, for example because of a misconfigured identity provider, answered with a server error. The login page shows what went wrong. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10612</span></li>
+<li><span class="changelog-area">Access Control</span>Anonymous viewers see less information now, such as the build details of the instance.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[26.10.200¶]]></title>
         <id>https://docs.triply.cc/reference/changelog/#26.10.200</id>
@@ -443,14 +468,10 @@ glance</a>.</p>
   correct results for SPARQL UPDATE queries.</li>
 <li><span class="changelog-area">API</span>Fixed an API validation issue, where requests to create a saved query were wrongly
   rejected.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[26.1.200¶]]></title>
-        <id>https://docs.triply.cc/reference/changelog/#26.1.200</id>
-        <link href="https://docs.triply.cc/reference/changelog/#26.1.200"/>
-        <updated>2026-10-29T15:53:47.224Z</updated>
-        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-01-21</p>
+</ul>
+<details class="older-releases" id="older-releases"><summary>Show 53 older releases</summary>
+<h2 id="26.1.200">26.1.200<a class="headerlink" href="#26.1.200" title="Permanent link">¶</a></h2>
+<p><strong>Release date:</strong> 2026-01-21</p>
 <p><strong>Features</strong></p>
 <ul>
 <li><span class="changelog-area">Tabular uploads</span>Improved the CSV, TSV and XML import representation, using
@@ -468,7 +489,6 @@ glance</a>.</p>
   <code>service &lt;...&gt; { ... }</code> clause) encounter timeouts or errors at third-party endpoints. Users now receive clearer
   error messages. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10705</span></li>
 </ul>
-<details class="older-releases" id="older-releases"><summary>Show 52 older releases</summary>
 <h2 id="26.1.100">26.1.100<a class="headerlink" href="#26.1.100" title="Permanent link">¶</a></h2>
 <p><strong>Release date:</strong> 2026-01-07</p>
 <p><strong>Issues fixed</strong></p>
@@ -1033,7 +1053,7 @@ glance</a>.</p>
 <li><span class="changelog-area">Speedy</span>Improved the performance of some aggregates queries. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8868</span></li>
 <li><span class="changelog-area">SPARQL-IDE</span>More errors are now validated by the SPARQL IDE. For example, nested aggregates (<code>count(count(...))</code>) now report as an error. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8834 · #8892</span></li>
 <li>TriplyDB supports query annotations. An TriplyDB SPARQL annotation looks like this:
-    <pre class="highlight"><code data-highlighted="yes" class="hljs language-shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">! cache: <span class="hljs-literal">false</span></span></code></pre>
+    <pre class="highlight"><code>#! cache: false</code></pre>
     This annotation makes ensure that the TriplyDB cache is bypassed. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8834</span></li>
 </ul>
 <p><strong>Issues fixed</strong></p>
@@ -1145,6 +1165,30 @@ glance</a>.</p>
 <li>The LD-Browser does not render an image, even though an image is present in the describe result. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8371</span></li>
 </ul>
 </details>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.1.200¶]]></title>
+        <id>https://docs.triply.cc/reference/changelog/#26.1.200</id>
+        <link href="https://docs.triply.cc/reference/changelog/#26.1.200"/>
+        <updated>2026-10-29T15:53:47.224Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-01-21</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><span class="changelog-area">Tabular uploads</span>Improved the CSV, TSV and XML import representation, using
+  the <a href="https://sparql-anything.readthedocs.io">facade-x</a> representation. This is
+  documented in <a href="../file-formats/">Supported file formats</a>. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10979</span></li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><span class="changelog-area">Large file uploads</span>Large file uploads in TriplyDB use the <a href="https://tus.io">TUS
+  protocol</a>. Some TUS clients use the legacy <code>x-patch</code> response header,
+  which caused issues. TriplyDB now supports this <code>x-patch</code> header in TUS uploads,
+  improving compatibility with additional client libraries such as the Java client.</li>
+<li>Fixed an issue where uploading a file from URL could show a download progress of more than 100%. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11089</span></li>
+<li><span class="changelog-area">SPARQL</span>Improved error handling when federated SPARQL queries (using the
+  <code>service &lt;...&gt; { ... }</code> clause) encounter timeouts or errors at third-party endpoints. Users now receive clearer
+  error messages. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10705</span></li>
+</ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.1.100¶]]></title>

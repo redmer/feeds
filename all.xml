@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-11-11T05:36:00.515Z</updated>
+    <updated>2026-11-11T17:35:20.966Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -1625,6 +1625,31 @@
   </div>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[26.11.100¶ (TriplyDB–Changelog)]]></title>
+        <id>https://docs.triply.cc/reference/changelog/#26.11.100</id>
+        <link href="https://docs.triply.cc/reference/changelog/#26.11.100"/>
+        <updated>2026-11-11T17:35:16.976Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-11-11</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><span class="changelog-area">Assets</span><span class="changelog-breaking">Breaking</span>An asset keeps its 10 most recent versions. Uploading a new version of an asset that already has 10 removes the oldest one. Assets that have more versions are trimmed to their 10 most recent versions the night after the upgrade: download any older version you want to keep before then. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15058</span></li>
+<li><span class="changelog-area">Admin Settings</span>A new setting, "Email admins on upgrade", emails the instance's administrators whenever the instance is upgraded to a newer release or patch, with a link to this changelog. It is off by default. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15051</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>Show the SHACL Validation results of a flow task with a message per violation. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14928</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A new Save Variable to Asset task saves the value of a flow variable as an asset of a dataset, as a <code>.txt</code>, <code>.csv</code>, <code>.json</code>, <code>.html</code> or <code>.svg</code> file. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14945</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A story or description can include a button that runs a flow, and the progress of its run. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14926</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">MCP</span>AI assistants can add an asset to a dataset, from a file at a URL, and read an asset.</li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Console</span>In the redesigned console, the error page names the instance's contact address, signing in with an account that does not exist leads to a page that offers to register, and links to the instance show a preview image when shared. It also has fixes from customer testing. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14943 · #14988 · #15038 · #15041</span></li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><span class="changelog-area">SPARQL</span>A triple pattern with only its predicate as a variable, such as <code>ex:a ?p ex:b</code>, failed the query. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15006</span></li>
+<li><span class="changelog-area">Saved Queries</span><span class="changelog-breaking">Breaking</span>The arguments of a saved query's API were not always fully validated. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15060</span></li>
+<li><span class="changelog-area">Data Upload</span>An import from a URL that does not report the file's size showed no progress until the download had finished. It shows how much has been downloaded so far. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14998</span></li>
+<li><span class="changelog-area">Access Control</span>A SAML sign-in that failed, for example because of a misconfigured identity provider, answered with a server error. The login page shows what went wrong. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10612</span></li>
+<li><span class="changelog-area">Access Control</span>Anonymous viewers see less information now, such as the build details of the instance.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[26.10.200¶ (TriplyDB–Changelog)]]></title>
         <id>https://docs.triply.cc/reference/changelog/#26.10.200</id>
         <link href="https://docs.triply.cc/reference/changelog/#26.10.200"/>
@@ -2062,14 +2087,10 @@ glance</a>.</p>
   correct results for SPARQL UPDATE queries.</li>
 <li><span class="changelog-area">API</span>Fixed an API validation issue, where requests to create a saved query were wrongly
   rejected.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[26.1.200¶ (TriplyDB–Changelog)]]></title>
-        <id>https://docs.triply.cc/reference/changelog/#26.1.200</id>
-        <link href="https://docs.triply.cc/reference/changelog/#26.1.200"/>
-        <updated>2026-10-29T15:53:47.224Z</updated>
-        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-01-21</p>
+</ul>
+<details class="older-releases" id="older-releases"><summary>Show 53 older releases</summary>
+<h2 id="26.1.200">26.1.200<a class="headerlink" href="#26.1.200" title="Permanent link">¶</a></h2>
+<p><strong>Release date:</strong> 2026-01-21</p>
 <p><strong>Features</strong></p>
 <ul>
 <li><span class="changelog-area">Tabular uploads</span>Improved the CSV, TSV and XML import representation, using
@@ -2087,7 +2108,6 @@ glance</a>.</p>
   <code>service &lt;...&gt; { ... }</code> clause) encounter timeouts or errors at third-party endpoints. Users now receive clearer
   error messages. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10705</span></li>
 </ul>
-<details class="older-releases" id="older-releases"><summary>Show 52 older releases</summary>
 <h2 id="26.1.100">26.1.100<a class="headerlink" href="#26.1.100" title="Permanent link">¶</a></h2>
 <p><strong>Release date:</strong> 2026-01-07</p>
 <p><strong>Issues fixed</strong></p>
@@ -2652,7 +2672,7 @@ glance</a>.</p>
 <li><span class="changelog-area">Speedy</span>Improved the performance of some aggregates queries. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8868</span></li>
 <li><span class="changelog-area">SPARQL-IDE</span>More errors are now validated by the SPARQL IDE. For example, nested aggregates (<code>count(count(...))</code>) now report as an error. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8834 · #8892</span></li>
 <li>TriplyDB supports query annotations. An TriplyDB SPARQL annotation looks like this:
-    <pre class="highlight"><code data-highlighted="yes" class="hljs language-shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">! cache: <span class="hljs-literal">false</span></span></code></pre>
+    <pre class="highlight"><code>#! cache: false</code></pre>
     This annotation makes ensure that the TriplyDB cache is bypassed. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8834</span></li>
 </ul>
 <p><strong>Issues fixed</strong></p>
@@ -2764,6 +2784,30 @@ glance</a>.</p>
 <li>The LD-Browser does not render an image, even though an image is present in the describe result. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8371</span></li>
 </ul>
 </details>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.1.200¶ (TriplyDB–Changelog)]]></title>
+        <id>https://docs.triply.cc/reference/changelog/#26.1.200</id>
+        <link href="https://docs.triply.cc/reference/changelog/#26.1.200"/>
+        <updated>2026-10-29T15:53:47.224Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-01-21</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><span class="changelog-area">Tabular uploads</span>Improved the CSV, TSV and XML import representation, using
+  the <a href="https://sparql-anything.readthedocs.io">facade-x</a> representation. This is
+  documented in <a href="../file-formats/">Supported file formats</a>. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10979</span></li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><span class="changelog-area">Large file uploads</span>Large file uploads in TriplyDB use the <a href="https://tus.io">TUS
+  protocol</a>. Some TUS clients use the legacy <code>x-patch</code> response header,
+  which caused issues. TriplyDB now supports this <code>x-patch</code> header in TUS uploads,
+  improving compatibility with additional client libraries such as the Java client.</li>
+<li>Fixed an issue where uploading a file from URL could show a download progress of more than 100%. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11089</span></li>
+<li><span class="changelog-area">SPARQL</span>Improved error handling when federated SPARQL queries (using the
+  <code>service &lt;...&gt; { ... }</code> clause) encounter timeouts or errors at third-party endpoints. Users now receive clearer
+  error messages. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10705</span></li>
+</ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.1.100¶ (TriplyDB–Changelog)]]></title>
@@ -3701,6 +3745,34 @@ glance</a>.</p>
 </ul>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[26.11.100¶ (TriplyDB–Technical changelog)]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.11.100</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.11.100"/>
+        <updated>2026-11-11T17:35:19.559Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-11-11</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>A new value <code>assets.versionsToKeep</code> (default <code>10</code>) sets how many versions of each asset are kept. An upload that adds a version beyond it removes the oldest, and a nightly job trims existing assets to it, deleting their older versions. On an instance with assets that have more versions, set it higher before upgrading if those versions must stay.</li>
+<li><span class="changelog-breaking">Breaking</span>The values schema rejects a key that this chart no longer has, so a <code>helm upgrade</code> with a values file that still sets one fails and names the key. Remove it before upgrading:<ul>
+<li><code>upgradeInformers</code>: an instance's administrators get the upgrade email instead, when "Email admins on upgrade" is switched on in the admin settings (off by default).</li>
+</ul>
+</li>
+<li>
+<p><strong>Breaking</strong> For this particular update, an index job that runs while the instance is upgraded is interrupted. Upgrade when no index jobs are running. Index job pods carry the labels <code>cc.triply.type=job</code> and <code>cc.triply.job.type=index</code>, so this lists the running ones in the instance's namespace:</p>
+<pre class="highlight"><code class="language-bash">kubectl --namespace &lt;namespace&gt; get pods \
+  --selector cc.triply.type=job,cc.triply.job.type=index \
+  --field-selector status.phase!=Succeeded,status.phase!=Failed</code></pre>
+</li>
+<li>
+<p>A new value <code>api.diskReservePercentage</code> (default <code>10</code>) keeps that percentage of each data volume free for indexing, SPARQL updates and queries. Uploads and imports that would use the reserve are refused with <code>507 Insufficient Storage</code>, and each refusal is reported as an error. On a hostpath volume, which reports the whole node disk, the check sees the node filling up rather than the instance.</p>
+</li>
+<li>The API's PodDisruptionBudget is configurable through <code>api.podDisruptionBudget.minAvailable</code> (default <code>0</code>, as before) or <code>api.podDisruptionBudget.maxUnavailable</code>, each a number or a percentage such as <code>"50%"</code>. Tighten it only when the API's <code>primary</code> and <code>storage</code> volumes are usable from several nodes at once: with node-bound volumes, such as ReadWriteOnce or hostpath, a tighter budget blocks node drains. The chart refuses a budget that leaves no API pod evictable, or that blocks a drain while <code>api.schedulePodsOnSameNode</code> is enabled. The budget covers only the API deployment's pods, no longer flow workers, backups and the init job.</li>
+<li>The console finishes its open requests before it stops, so a rollout or node drain no longer cuts them off. New values <code>console.shutdown.preStopSleepSeconds</code> (default <code>10</code>), <code>console.shutdown.drainHardTimeoutSeconds</code> (default <code>18</code>) and <code>console.shutdown.terminationGracePeriodSeconds</code> (default <code>45</code>) set its shutdown budget.</li>
+<li><code>indexJobs.podSchedulingTimeoutSeconds</code> counts the time an index job pod spends pulling its image again, and defaults to <code>120</code> (previously <code>60</code>). An index job or flow worker pod whose image cannot be pulled fails at once.</li>
+<li>SPARQL query results are written to a file on the API's storage volume instead of being passed through memory, which typically happened in the refreshqueries cronjob. Now, a large result no longer runs that cronjob out of memory.</li>
+<li>The images run on Node.js 26.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[26.10.200¶ (TriplyDB–Technical changelog)]]></title>
         <id>https://docs.triply.cc/reference/technical-changelog/#26.10.200</id>
         <link href="https://docs.triply.cc/reference/technical-changelog/#26.10.200"/>
@@ -4154,63 +4226,63 @@ Ingress templates have been refactored to support both nginx and HAProxy ingress
 <p><strong>Features</strong></p>
 <ul>
 <li>SAML can now be configured through native helm values, instead of using environment variables for the API pod. I.e., A configuration like this:
-<pre class="highlight"><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">api:</span>
-  <span class="hljs-attr">env:</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__ENTRY_POINT:</span> <span class="hljs-string">some_entrypoint_url</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__IDP:</span> <span class="hljs-string">some_idp_id</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__EMAIL__KEY:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__NAME__KEY:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__ISSUER:</span> <span class="hljs-string">some_issuer_id</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__LABEL:</span> <span class="hljs-string">Login</span> <span class="hljs-string">with</span> <span class="hljs-string">SAML</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__SIGNATURE_ALGORITHM:</span> <span class="hljs-string">RSA_SHA256</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__SUPPORT_IDP_LOGOUT:</span> <span class="hljs-string">"false"</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__WANT_AUTHN_RESPONSE_SIGNED:</span> <span class="hljs-string">"false"</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__IDP_CERT:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">CERT</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__PRIVATE_KEY:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">PRIVATE_KEY</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__PUBLIC_CERT:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">SIGNING_CERT</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__DECRYPTION_CERT:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">DECRYPTION_CERT</span>
-    <span class="hljs-attr">TRIPLY__SAML__0__DECRYPTION_PVK:</span>
-      <span class="hljs-attr">valueFrom:</span>
-        <span class="hljs-attr">secretKeyRef:</span>
-          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">DECRYPTION_PVK</span></code></pre>
+<pre class="highlight"><code class="language-yaml">api:
+  env:
+    TRIPLY__SAML__0__ENTRY_POINT: some_entrypoint_url
+    TRIPLY__SAML__0__IDP: some_idp_id
+    TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__EMAIL__KEY: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+    TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__NAME__KEY: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
+    TRIPLY__SAML__0__ISSUER: some_issuer_id
+    TRIPLY__SAML__0__LABEL: Login with SAML
+    TRIPLY__SAML__0__SIGNATURE_ALGORITHM: RSA_SHA256
+    TRIPLY__SAML__0__SUPPORT_IDP_LOGOUT: "false"
+    TRIPLY__SAML__0__WANT_AUTHN_RESPONSE_SIGNED: "false"
+    TRIPLY__SAML__0__IDP_CERT:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: CERT
+    TRIPLY__SAML__0__PRIVATE_KEY:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: PRIVATE_KEY
+    TRIPLY__SAML__0__PUBLIC_CERT:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: SIGNING_CERT
+    TRIPLY__SAML__0__DECRYPTION_CERT:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: DECRYPTION_CERT
+    TRIPLY__SAML__0__DECRYPTION_PVK:
+      valueFrom:
+        secretKeyRef:
+          name: saml-credentials-0
+          key: DECRYPTION_PVK</code></pre>
 will now be set like this:
-<pre class="highlight"><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">auth:</span>
-  <span class="hljs-attr">saml:</span>
-    <span class="hljs-attr">some_idp_id:</span>
-      <span class="hljs-attr">entryPoint:</span> <span class="hljs-string">some_entrypoint_url</span>
-      <span class="hljs-attr">issuer:</span> <span class="hljs-string">some_issuer_id</span>
-      <span class="hljs-attr">label:</span> <span class="hljs-string">Login</span> <span class="hljs-string">with</span> <span class="hljs-string">SAML</span>
-      <span class="hljs-attr">signatureAlgorithm:</span> <span class="hljs-string">RSA_SHA256</span>
-      <span class="hljs-attr">idpAttributeMappings:</span>
-        <span class="hljs-attr">email:</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span>
-        <span class="hljs-attr">name:</span>
-          <span class="hljs-attr">key:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</span>
-      <span class="hljs-attr">additionalConfig:</span>
-        <span class="hljs-attr">wantAuthnResponseSigned:</span> <span class="hljs-literal">false</span>
-        <span class="hljs-attr">supportIdpLogout:</span> <span class="hljs-literal">false</span>
-      <span class="hljs-attr">idpCertSecret:</span>
-        <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
-        <span class="hljs-attr">key:</span> <span class="hljs-string">CERT</span>
-      <span class="hljs-attr">spCertSecret:</span>
-        <span class="hljs-attr">name:</span> <span class="hljs-string">saml-sp-certs</span></code></pre></li>
+<pre class="highlight"><code class="language-yaml">auth:
+  saml:
+    some_idp_id:
+      entryPoint: some_entrypoint_url
+      issuer: some_issuer_id
+      label: Login with SAML
+      signatureAlgorithm: RSA_SHA256
+      idpAttributeMappings:
+        email:
+          key: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+        name:
+          key: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
+      additionalConfig:
+        wantAuthnResponseSigned: false
+        supportIdpLogout: false
+      idpCertSecret:
+        name: saml-credentials-0
+        key: CERT
+      spCertSecret:
+        name: saml-sp-certs</code></pre></li>
 </ul>
 <p>Note that:</p>
 <ul>
@@ -4235,13 +4307,13 @@ will now be set like this:
 <ul>
 <li>The type <code>tdbServices.customLabels</code> changed from an array to an object. I.e., change
   this:
-<pre class="highlight"><code data-highlighted="yes" class="hljs language-vbnet"><span class="hljs-symbol">tdbServices:</span>
+<pre class="highlight"><code>tdbServices:
   customLabels:
-  - VAL=<span class="hljs-keyword">KEY</span></code></pre>
+  - VAL=KEY</code></pre>
 to:
-<pre class="highlight"><code data-highlighted="yes" class="hljs language-yaml"><span class="hljs-attr">tdbServices:</span>
-  <span class="hljs-attr">customLabels:</span>
-    <span class="hljs-attr">VAL:</span> <span class="hljs-string">KEY</span></code></pre></li>
+<pre class="highlight"><code>tdbServices:
+  customLabels:
+    VAL: KEY</code></pre></li>
 </ul>]]></content>
     </entry>
     <entry>
