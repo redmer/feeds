@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-11-12T05:35:39.852Z</updated>
+    <updated>2026-11-12T17:35:18.541Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -1647,7 +1647,16 @@
 <li><span class="changelog-area">Data Upload</span>An import from a URL that does not report the file's size showed no progress until the download had finished. It shows how much has been downloaded so far. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14998</span></li>
 <li><span class="changelog-area">Access Control</span>A SAML sign-in that failed, for example because of a misconfigured identity provider, answered with a server error. The login page shows what went wrong. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10612</span></li>
 <li><span class="changelog-area">Access Control</span>Anonymous viewers see less information now, such as the build details of the instance.</li>
-</ul>]]></content>
+</ul>
+<div class="patch-releases">
+<p><strong>Patch releases</strong></p>
+<ul>
+<li id="26.11.101"><strong>26.11.101</strong> · 2026-11-12<ul>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Console</span>In the redesigned console, the suggestions on a dataset's page could offer a feature that is turned off for the instance or the dataset, such as GraphQL, whose page then reported that it was not found. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15123</span></li>
+</ul>
+</li>
+</ul>
+</div>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.10.200¶ (TriplyDB–Changelog)]]></title>
