@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/reference/technical-changelog/</id>
     <title>TriplyDB–Technical changelog</title>
-    <updated>2026-11-21T17:35:14.565Z</updated>
+    <updated>2026-11-22T05:35:44.426Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/reference/technical-changelog/favicon.ico</icon>
     <entry>
@@ -19,7 +19,7 @@
 </li>
 <li>
 <p><strong>Breaking</strong> For this particular update, an index job that runs while the instance is upgraded is interrupted. Upgrade when no index jobs are running. Index job pods carry the labels <code>cc.triply.type=job</code> and <code>cc.triply.job.type=index</code>, so this lists the running ones in the instance's namespace:</p>
-<pre class="highlight"><code class="language-bash hljs" data-highlighted="yes">kubectl --namespace &lt;namespace&gt; get pods \
+<pre class="highlight"><code class="language-bash">kubectl --namespace &lt;namespace&gt; get pods \
   --selector cc.triply.type=job,cc.triply.job.type=index \
   --field-selector status.phase!=Succeeded,status.phase!=Failed</code></pre>
 </li>
