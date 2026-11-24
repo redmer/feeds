@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-11-23T17:36:55.754Z</updated>
+    <updated>2026-11-24T05:50:50.881Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -4318,13 +4318,13 @@ will now be set like this:
 <ul>
 <li>The type <code>tdbServices.customLabels</code> changed from an array to an object. I.e., change
   this:
-<pre class="highlight"><code>tdbServices:
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-vbnet"><span class="hljs-symbol">tdbServices:</span>
   customLabels:
-  - VAL=KEY</code></pre>
+  - VAL=<span class="hljs-keyword">KEY</span></code></pre>
 to:
-<pre class="highlight"><code>tdbServices:
-  customLabels:
-    VAL: KEY</code></pre></li>
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-yaml"><span class="hljs-attr">tdbServices:</span>
+  <span class="hljs-attr">customLabels:</span>
+    <span class="hljs-attr">VAL:</span> <span class="hljs-string">KEY</span></code></pre></li>
 </ul>]]></content>
     </entry>
     <entry>
@@ -4377,11 +4377,11 @@ to:
  for more info on such selectors. Specify this selector in
   <code>networkPolicies.ingressSelector</code>. An example definition is the following:</li>
 </ul>
-<pre class="highlight"><code>networkPolicies:
-  ingressSelector:
-    namespaceSelector:
-      matchLabels:
-        kubernetes.io/metadata.name: ingress-nginx</code></pre>]]></content>
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-yaml"><span class="hljs-attr">networkPolicies:</span>
+  <span class="hljs-attr">ingressSelector:</span>
+    <span class="hljs-attr">namespaceSelector:</span>
+      <span class="hljs-attr">matchLabels:</span>
+        <span class="hljs-attr">kubernetes.io/metadata.name:</span> <span class="hljs-string">ingress-nginx</span></code></pre>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[24.11.200¶ (TriplyDB–Technical changelog)]]></title>
