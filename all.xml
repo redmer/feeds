@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redmer.github.io/feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2026-11-25T05:35:56.891Z</updated>
+    <updated>2026-11-25T17:35:37.881Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[The Quiet Revolution in AI Memory (The Knowledge Graph Guys?)]]></title>
@@ -1625,6 +1625,37 @@
   </div>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[26.11.200¶ (TriplyDB–Changelog)]]></title>
+        <id>https://docs.triply.cc/reference/changelog/#26.11.200</id>
+        <link href="https://docs.triply.cc/reference/changelog/#26.11.200"/>
+        <updated>2026-11-25T17:35:33.826Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-11-25</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><span class="changelog-area">Access Control</span>The permissions of a role can be looked up where roles are handed out: on the Roles page of the admin settings, including the fixed system roles such as "member", and when adding a member to a group. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15105 · #15107</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">SHACL</span>A SHACL validation report, from the API or from a flow, records when it was made (<code>prov:generatedAtTime</code>), whether it covers the whole dataset or selected resources, and which data graphs and shapes graphs it used (<code>sh:usedDataGraph</code>, <code>sh:usedShapesGraph</code>). <span class="changelog-issues" title="Issue number, to quote when you contact support">#14968</span></li>
+<li><span class="changelog-area">Stories</span>A query in a story shows that it is loading until its first results arrive. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10834</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">SPARQL</span>The cost of a text search is estimated more accurately, so more queries that search text use the text index where it is faster. <span class="changelog-issues" title="Issue number, to quote when you contact support">#12340</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Admin Settings</span>Single sign-on settings used to be a setting managed by system administrators. Now, a new Single sign-on page in the admin settings lets admins add, edit, disable and remove SAML identity providers. <span class="changelog-issues" title="Issue number, to quote when you contact support">#9318</span> </li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">SPARQL</span>An instance SPARQL endpoint describes the instance itself: its accounts, datasets, saved queries, stories, assets, flows and flow runs, as far as the one asking may see them. See <a href="../../how-to/query-instance-metadata/">Query instance metadata</a> and the <a href="../instance-sparql-endpoint/">Instance SPARQL endpoint reference</a>. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14919 · #15102</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">MCP</span>AI assistants can move a dataset, saved query or story to another account, copy a dataset, saved query, story or flow to another account, and set the avatar of a dataset or account. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15068</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">MCP</span>On an instance that trusts its organization's identity provider, such as Okta, an AI assistant like Claude connects without a consent screen. It connects only for users who signed in to the instance through that identity provider before. The Connected apps page shows such a connection under the identity provider. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15042</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Console</span>In the redesigned console, the search on the content page updates while you type and ranks the best text matches higher, a skip-to-content link leads keyboard users past the navigation. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15039 · #15075 · #15085 · #15121</span></li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><span class="changelog-area">Datasets</span>The Graphs section of a dataset's overview could in some cases omit certain graphs from this overview. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15117</span></li>
+<li><span class="changelog-area">Data Upload</span>Some ZIP files failed to upload with "invalid signature", although they could be unpacked on a computer. <span class="changelog-issues" title="Issue number, to quote when you contact support">#9426</span></li>
+<li><span class="changelog-area">Data Editor</span>A value chosen from an <code>sh:in</code> list for an <code>rdf:langString</code> property was rejected as "Not a valid rdf:langString", which blocked saving. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15132</span></li>
+<li><span class="changelog-area">SPARQL</span>A query with a very large <code>values</code> block could fail.</li>
+<li><span class="changelog-area">Console</span>Registering with an account name that is not allowed did not say why it was refused.</li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A scheduled or hook-triggered run that its owner was not allowed to start was dropped without a trace. It appears as a failed run. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15084</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A Save Variable to Asset task failed when its dataset did not exist yet. It creates the dataset. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14945</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>In the flow builder, Ctrl+A in a query editor selected all tasks instead of the query text, and cancelling the paste prompt in Firefox showed an error. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15078 · #15079</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>The flow runs page of the admin settings failed when a run had been started by an account that was deleted since. Deleting a user now also deletes their flow hooks.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[26.11.100¶ (TriplyDB–Changelog)]]></title>
         <id>https://docs.triply.cc/reference/changelog/#26.11.100</id>
         <link href="https://docs.triply.cc/reference/changelog/#26.11.100"/>
@@ -2067,14 +2098,10 @@ glance</a>.</p>
 <li><span class="changelog-area">Data Upload</span>Fixed an issue where importing data from a URL could fail because an already decompressed file was incorrectly treated as compressed. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11175</span></li>
 <li><span class="changelog-area">SPARQL</span>Fixed an issue where introspection functions (such as <code>tf:authenticated_user_url()</code>) did not work in SPARQL UPDATE queries. These functions now work in any WHERE clause. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10653</span></li>
 <li><span class="changelog-area">SPARQL</span>Fixed an issue where the SERVICE clause did not work in SPARQL UPDATE queries, even though the same clause worked correctly in SELECT queries. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10440</span></li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[26.2.100¶ (TriplyDB–Changelog)]]></title>
-        <id>https://docs.triply.cc/reference/changelog/#26.2.100</id>
-        <link href="https://docs.triply.cc/reference/changelog/#26.2.100"/>
-        <updated>2026-10-29T15:53:47.212Z</updated>
-        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-02-04</p>
+</ul>
+<details class="older-releases" id="older-releases"><summary>Show 54 older releases</summary>
+<h2 id="26.2.100">26.2.100<a class="headerlink" href="#26.2.100" title="Permanent link">¶</a></h2>
+<p><strong>Release date:</strong> 2026-02-04</p>
 <p><strong>Features</strong></p>
 <ul>
 <li><span class="changelog-area">Dataset Settings</span>Added support for disabling features on a dataset level.
@@ -2099,7 +2126,6 @@ glance</a>.</p>
 <li><span class="changelog-area">API</span>Fixed an API validation issue, where requests to create a saved query were wrongly
   rejected.</li>
 </ul>
-<details class="older-releases" id="older-releases"><summary>Show 53 older releases</summary>
 <h2 id="26.1.200">26.1.200<a class="headerlink" href="#26.1.200" title="Permanent link">¶</a></h2>
 <p><strong>Release date:</strong> 2026-01-21</p>
 <p><strong>Features</strong></p>
@@ -2795,6 +2821,37 @@ glance</a>.</p>
 <li>The LD-Browser does not render an image, even though an image is present in the describe result. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8371</span></li>
 </ul>
 </details>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.2.100¶ (TriplyDB–Changelog)]]></title>
+        <id>https://docs.triply.cc/reference/changelog/#26.2.100</id>
+        <link href="https://docs.triply.cc/reference/changelog/#26.2.100"/>
+        <updated>2026-10-29T15:53:47.212Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-02-04</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><span class="changelog-area">Dataset Settings</span>Added support for disabling features on a dataset level.
+  Dataset owners can now hide specific features such as the SPARQL IDE, LD-Browser, data editor,
+  assets, services, and the triples table from the dataset interface to simplify the user
+  experience. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11097</span></li>
+<li><span class="changelog-area">Data Editor</span>Next to editing skos hierarchies, the dataset editor now supports
+  editing and navigating resources from any data model. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11005</span> </li>
+<li><span class="changelog-area">Data Editor</span>Improved instance search to support searching by IRI in addition to labels. When a class has many instances, the system now fetches and displays labels properly in the outline. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11010</span></li>
+<li><span class="changelog-area">Data Editor</span>Improved layout behavior for the Data Model and Data Editor pages. Menu items are now only shown when there is relevant content for the user to see or edit. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10838</span></li>
+<li><span class="changelog-area">Tags</span>Supports tagging queries, datasets and stories, supporting more
+  flexibility in grouping such items. Searching by tag is possible in the <a href="https://triplydb.com/browse">faceted search</a> for datasets, queries, and
+  stories. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10962</span></li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><span class="changelog-area">Forms</span>In some cases, the UI does not properly show an error message when
+  there is wrong user input.  Users now
+  receive clear feedback when form values are invalid. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11094</span></li>
+<li><span class="changelog-area">SPARQL</span>Fixed an issue <code>SERVICE</code> and some SPARQL functions were not returning the
+  correct results for SPARQL UPDATE queries.</li>
+<li><span class="changelog-area">API</span>Fixed an API validation issue, where requests to create a saved query were wrongly
+  rejected.</li>
+</ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.1.200¶ (TriplyDB–Changelog)]]></title>
@@ -3756,6 +3813,19 @@ glance</a>.</p>
 </ul>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[26.11.200¶ (TriplyDB–Technical changelog)]]></title>
+        <id>https://docs.triply.cc/reference/technical-changelog/#26.11.200</id>
+        <link href="https://docs.triply.cc/reference/technical-changelog/#26.11.200"/>
+        <updated>2026-11-25T17:35:36.534Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-11-25</p>
+<ul>
+<li><span class="changelog-breaking">Breaking</span>The SAML identity providers move from <code>auth.saml</code> to <code>adminSettings.saml</code>, and the values schema rejects <code>auth</code>, so a <code>helm upgrade</code> with a values file that still sets it fails. Move every identity provider under <code>adminSettings.saml</code> before upgrading, keeping its key: accounts store the key of the identity provider they signed in with. The <code>node-saml</code> options <code>supportIdpLogout</code>, <code>logoutUrl</code>, <code>audience</code>, <code>wantAuthnResponseSigned</code> and <code>disableRequestedAuthnContext</code> become settings of an identity provider of their own: move them out of its <code>additionalConfig</code> too.</li>
+<li><span class="changelog-breaking">Breaking</span>An identity provider configured with <code>idpMetadataUrl</code> trusts only the signing certificates in its metadata. A certificate marked <code>use="encryption"</code> is no longer trusted for signatures, and metadata whose certificates are not valid X.509 is refused. An identity provider whose metadata marks its only signing certificate <code>use="encryption"</code> stops signing users in at its next metadata fetch.</li>
+<li>SAML identity providers can also be configured by super admins on the Single sign-on page of the admin settings, in the redesigned console. A setting given under <code>adminSettings.saml</code> is locked there; an admin sets the others. An identity provider offers a login once the values file and the admin settings together give it a <code>label</code>, an <code>entryPoint</code>, an <code>issuer</code> and an identity provider certificate. </li>
+<li>On an NFS volume, the janitor keeps a directory in the trash while NFS still holds files in it open, rather than failing on it.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[26.11.100¶ (TriplyDB–Technical changelog)]]></title>
         <id>https://docs.triply.cc/reference/technical-changelog/#26.11.100</id>
         <link href="https://docs.triply.cc/reference/technical-changelog/#26.11.100"/>
@@ -4237,63 +4307,63 @@ Ingress templates have been refactored to support both nginx and HAProxy ingress
 <p><strong>Features</strong></p>
 <ul>
 <li>SAML can now be configured through native helm values, instead of using environment variables for the API pod. I.e., A configuration like this:
-<pre class="highlight"><code class="language-yaml">api:
-  env:
-    TRIPLY__SAML__0__ENTRY_POINT: some_entrypoint_url
-    TRIPLY__SAML__0__IDP: some_idp_id
-    TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__EMAIL__KEY: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
-    TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__NAME__KEY: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
-    TRIPLY__SAML__0__ISSUER: some_issuer_id
-    TRIPLY__SAML__0__LABEL: Login with SAML
-    TRIPLY__SAML__0__SIGNATURE_ALGORITHM: RSA_SHA256
-    TRIPLY__SAML__0__SUPPORT_IDP_LOGOUT: "false"
-    TRIPLY__SAML__0__WANT_AUTHN_RESPONSE_SIGNED: "false"
-    TRIPLY__SAML__0__IDP_CERT:
-      valueFrom:
-        secretKeyRef:
-          name: saml-credentials-0
-          key: CERT
-    TRIPLY__SAML__0__PRIVATE_KEY:
-      valueFrom:
-        secretKeyRef:
-          name: saml-credentials-0
-          key: PRIVATE_KEY
-    TRIPLY__SAML__0__PUBLIC_CERT:
-      valueFrom:
-        secretKeyRef:
-          name: saml-credentials-0
-          key: SIGNING_CERT
-    TRIPLY__SAML__0__DECRYPTION_CERT:
-      valueFrom:
-        secretKeyRef:
-          name: saml-credentials-0
-          key: DECRYPTION_CERT
-    TRIPLY__SAML__0__DECRYPTION_PVK:
-      valueFrom:
-        secretKeyRef:
-          name: saml-credentials-0
-          key: DECRYPTION_PVK</code></pre>
+<pre class="highlight"><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">api:</span>
+  <span class="hljs-attr">env:</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__ENTRY_POINT:</span> <span class="hljs-string">some_entrypoint_url</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__IDP:</span> <span class="hljs-string">some_idp_id</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__EMAIL__KEY:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__IDP_ATTRIBUTE_MAPPINGS__NAME__KEY:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__ISSUER:</span> <span class="hljs-string">some_issuer_id</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__LABEL:</span> <span class="hljs-string">Login</span> <span class="hljs-string">with</span> <span class="hljs-string">SAML</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__SIGNATURE_ALGORITHM:</span> <span class="hljs-string">RSA_SHA256</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__SUPPORT_IDP_LOGOUT:</span> <span class="hljs-string">"false"</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__WANT_AUTHN_RESPONSE_SIGNED:</span> <span class="hljs-string">"false"</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__IDP_CERT:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">CERT</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__PRIVATE_KEY:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">PRIVATE_KEY</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__PUBLIC_CERT:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">SIGNING_CERT</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__DECRYPTION_CERT:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">DECRYPTION_CERT</span>
+    <span class="hljs-attr">TRIPLY__SAML__0__DECRYPTION_PVK:</span>
+      <span class="hljs-attr">valueFrom:</span>
+        <span class="hljs-attr">secretKeyRef:</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">DECRYPTION_PVK</span></code></pre>
 will now be set like this:
-<pre class="highlight"><code class="language-yaml">auth:
-  saml:
-    some_idp_id:
-      entryPoint: some_entrypoint_url
-      issuer: some_issuer_id
-      label: Login with SAML
-      signatureAlgorithm: RSA_SHA256
-      idpAttributeMappings:
-        email:
-          key: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
-        name:
-          key: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
-      additionalConfig:
-        wantAuthnResponseSigned: false
-        supportIdpLogout: false
-      idpCertSecret:
-        name: saml-credentials-0
-        key: CERT
-      spCertSecret:
-        name: saml-sp-certs</code></pre></li>
+<pre class="highlight"><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">auth:</span>
+  <span class="hljs-attr">saml:</span>
+    <span class="hljs-attr">some_idp_id:</span>
+      <span class="hljs-attr">entryPoint:</span> <span class="hljs-string">some_entrypoint_url</span>
+      <span class="hljs-attr">issuer:</span> <span class="hljs-string">some_issuer_id</span>
+      <span class="hljs-attr">label:</span> <span class="hljs-string">Login</span> <span class="hljs-string">with</span> <span class="hljs-string">SAML</span>
+      <span class="hljs-attr">signatureAlgorithm:</span> <span class="hljs-string">RSA_SHA256</span>
+      <span class="hljs-attr">idpAttributeMappings:</span>
+        <span class="hljs-attr">email:</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span>
+        <span class="hljs-attr">name:</span>
+          <span class="hljs-attr">key:</span> <span class="hljs-string">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</span>
+      <span class="hljs-attr">additionalConfig:</span>
+        <span class="hljs-attr">wantAuthnResponseSigned:</span> <span class="hljs-literal">false</span>
+        <span class="hljs-attr">supportIdpLogout:</span> <span class="hljs-literal">false</span>
+      <span class="hljs-attr">idpCertSecret:</span>
+        <span class="hljs-attr">name:</span> <span class="hljs-string">saml-credentials-0</span>
+        <span class="hljs-attr">key:</span> <span class="hljs-string">CERT</span>
+      <span class="hljs-attr">spCertSecret:</span>
+        <span class="hljs-attr">name:</span> <span class="hljs-string">saml-sp-certs</span></code></pre></li>
 </ul>
 <p>Note that:</p>
 <ul>
@@ -4318,13 +4388,13 @@ will now be set like this:
 <ul>
 <li>The type <code>tdbServices.customLabels</code> changed from an array to an object. I.e., change
   this:
-<pre class="highlight"><code>tdbServices:
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-vbnet"><span class="hljs-symbol">tdbServices:</span>
   customLabels:
-  - VAL=KEY</code></pre>
+  - VAL=<span class="hljs-keyword">KEY</span></code></pre>
 to:
-<pre class="highlight"><code>tdbServices:
-  customLabels:
-    VAL: KEY</code></pre></li>
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-yaml"><span class="hljs-attr">tdbServices:</span>
+  <span class="hljs-attr">customLabels:</span>
+    <span class="hljs-attr">VAL:</span> <span class="hljs-string">KEY</span></code></pre></li>
 </ul>]]></content>
     </entry>
     <entry>
@@ -4377,11 +4447,11 @@ to:
  for more info on such selectors. Specify this selector in
   <code>networkPolicies.ingressSelector</code>. An example definition is the following:</li>
 </ul>
-<pre class="highlight"><code>networkPolicies:
-  ingressSelector:
-    namespaceSelector:
-      matchLabels:
-        kubernetes.io/metadata.name: ingress-nginx</code></pre>]]></content>
+<pre class="highlight"><code data-highlighted="yes" class="hljs language-yaml"><span class="hljs-attr">networkPolicies:</span>
+  <span class="hljs-attr">ingressSelector:</span>
+    <span class="hljs-attr">namespaceSelector:</span>
+      <span class="hljs-attr">matchLabels:</span>
+        <span class="hljs-attr">kubernetes.io/metadata.name:</span> <span class="hljs-string">ingress-nginx</span></code></pre>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[24.11.200¶ (TriplyDB–Technical changelog)]]></title>

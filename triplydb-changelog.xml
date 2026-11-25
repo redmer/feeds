@@ -2,9 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.triply.cc/reference/changelog/</id>
     <title>TriplyDB–Changelog</title>
-    <updated>2026-11-25T05:35:56.849Z</updated>
+    <updated>2026-11-25T17:35:37.856Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://docs.triply.cc/reference/changelog/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[26.11.200¶]]></title>
+        <id>https://docs.triply.cc/reference/changelog/#26.11.200</id>
+        <link href="https://docs.triply.cc/reference/changelog/#26.11.200"/>
+        <updated>2026-11-25T17:35:33.826Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-11-25</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><span class="changelog-area">Access Control</span>The permissions of a role can be looked up where roles are handed out: on the Roles page of the admin settings, including the fixed system roles such as "member", and when adding a member to a group. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15105 · #15107</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">SHACL</span>A SHACL validation report, from the API or from a flow, records when it was made (<code>prov:generatedAtTime</code>), whether it covers the whole dataset or selected resources, and which data graphs and shapes graphs it used (<code>sh:usedDataGraph</code>, <code>sh:usedShapesGraph</code>). <span class="changelog-issues" title="Issue number, to quote when you contact support">#14968</span></li>
+<li><span class="changelog-area">Stories</span>A query in a story shows that it is loading until its first results arrive. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10834</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">SPARQL</span>The cost of a text search is estimated more accurately, so more queries that search text use the text index where it is faster. <span class="changelog-issues" title="Issue number, to quote when you contact support">#12340</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Admin Settings</span>Single sign-on settings used to be a setting managed by system administrators. Now, a new Single sign-on page in the admin settings lets admins add, edit, disable and remove SAML identity providers. <span class="changelog-issues" title="Issue number, to quote when you contact support">#9318</span> </li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">SPARQL</span>An instance SPARQL endpoint describes the instance itself: its accounts, datasets, saved queries, stories, assets, flows and flow runs, as far as the one asking may see them. See <a href="../../how-to/query-instance-metadata/">Query instance metadata</a> and the <a href="../instance-sparql-endpoint/">Instance SPARQL endpoint reference</a>. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14919 · #15102</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">MCP</span>AI assistants can move a dataset, saved query or story to another account, copy a dataset, saved query, story or flow to another account, and set the avatar of a dataset or account. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15068</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">MCP</span>On an instance that trusts its organization's identity provider, such as Okta, an AI assistant like Claude connects without a consent screen. It connects only for users who signed in to the instance through that identity provider before. The Connected apps page shows such a connection under the identity provider. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15042</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Console</span>In the redesigned console, the search on the content page updates while you type and ranks the best text matches higher, a skip-to-content link leads keyboard users past the navigation. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15039 · #15075 · #15085 · #15121</span></li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><span class="changelog-area">Datasets</span>The Graphs section of a dataset's overview could in some cases omit certain graphs from this overview. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15117</span></li>
+<li><span class="changelog-area">Data Upload</span>Some ZIP files failed to upload with "invalid signature", although they could be unpacked on a computer. <span class="changelog-issues" title="Issue number, to quote when you contact support">#9426</span></li>
+<li><span class="changelog-area">Data Editor</span>A value chosen from an <code>sh:in</code> list for an <code>rdf:langString</code> property was rejected as "Not a valid rdf:langString", which blocked saving. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15132</span></li>
+<li><span class="changelog-area">SPARQL</span>A query with a very large <code>values</code> block could fail.</li>
+<li><span class="changelog-area">Console</span>Registering with an account name that is not allowed did not say why it was refused.</li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A scheduled or hook-triggered run that its owner was not allowed to start was dropped without a trace. It appears as a failed run. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15084</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>A Save Variable to Asset task failed when its dataset did not exist yet. It creates the dataset. <span class="changelog-issues" title="Issue number, to quote when you contact support">#14945</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>In the flow builder, Ctrl+A in a query editor selected all tasks instead of the query text, and cancelling the paste prompt in Firefox showed an error. <span class="changelog-issues" title="Issue number, to quote when you contact support">#15078 · #15079</span></li>
+<li class="preview"><span class="availability-mark availability-preview">Preview</span><span class="changelog-area">Flows</span>The flow runs page of the admin settings failed when a run had been started by an account that was deleted since. Deleting a user now also deletes their flow hooks.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[26.11.100¶]]></title>
         <id>https://docs.triply.cc/reference/changelog/#26.11.100</id>
@@ -448,14 +479,10 @@ glance</a>.</p>
 <li><span class="changelog-area">Data Upload</span>Fixed an issue where importing data from a URL could fail because an already decompressed file was incorrectly treated as compressed. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11175</span></li>
 <li><span class="changelog-area">SPARQL</span>Fixed an issue where introspection functions (such as <code>tf:authenticated_user_url()</code>) did not work in SPARQL UPDATE queries. These functions now work in any WHERE clause. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10653</span></li>
 <li><span class="changelog-area">SPARQL</span>Fixed an issue where the SERVICE clause did not work in SPARQL UPDATE queries, even though the same clause worked correctly in SELECT queries. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10440</span></li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[26.2.100¶]]></title>
-        <id>https://docs.triply.cc/reference/changelog/#26.2.100</id>
-        <link href="https://docs.triply.cc/reference/changelog/#26.2.100"/>
-        <updated>2026-10-29T15:53:47.212Z</updated>
-        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-02-04</p>
+</ul>
+<details class="older-releases" id="older-releases"><summary>Show 54 older releases</summary>
+<h2 id="26.2.100">26.2.100<a class="headerlink" href="#26.2.100" title="Permanent link">¶</a></h2>
+<p><strong>Release date:</strong> 2026-02-04</p>
 <p><strong>Features</strong></p>
 <ul>
 <li><span class="changelog-area">Dataset Settings</span>Added support for disabling features on a dataset level.
@@ -480,7 +507,6 @@ glance</a>.</p>
 <li><span class="changelog-area">API</span>Fixed an API validation issue, where requests to create a saved query were wrongly
   rejected.</li>
 </ul>
-<details class="older-releases" id="older-releases"><summary>Show 53 older releases</summary>
 <h2 id="26.1.200">26.1.200<a class="headerlink" href="#26.1.200" title="Permanent link">¶</a></h2>
 <p><strong>Release date:</strong> 2026-01-21</p>
 <p><strong>Features</strong></p>
@@ -1176,6 +1202,37 @@ glance</a>.</p>
 <li>The LD-Browser does not render an image, even though an image is present in the describe result. <span class="changelog-issues" title="Issue number, to quote when you contact support">#8371</span></li>
 </ul>
 </details>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[26.2.100¶]]></title>
+        <id>https://docs.triply.cc/reference/changelog/#26.2.100</id>
+        <link href="https://docs.triply.cc/reference/changelog/#26.2.100"/>
+        <updated>2026-10-29T15:53:47.212Z</updated>
+        <content type="html"><![CDATA[<p><strong>Release date:</strong> 2026-02-04</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><span class="changelog-area">Dataset Settings</span>Added support for disabling features on a dataset level.
+  Dataset owners can now hide specific features such as the SPARQL IDE, LD-Browser, data editor,
+  assets, services, and the triples table from the dataset interface to simplify the user
+  experience. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11097</span></li>
+<li><span class="changelog-area">Data Editor</span>Next to editing skos hierarchies, the dataset editor now supports
+  editing and navigating resources from any data model. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11005</span> </li>
+<li><span class="changelog-area">Data Editor</span>Improved instance search to support searching by IRI in addition to labels. When a class has many instances, the system now fetches and displays labels properly in the outline. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11010</span></li>
+<li><span class="changelog-area">Data Editor</span>Improved layout behavior for the Data Model and Data Editor pages. Menu items are now only shown when there is relevant content for the user to see or edit. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10838</span></li>
+<li><span class="changelog-area">Tags</span>Supports tagging queries, datasets and stories, supporting more
+  flexibility in grouping such items. Searching by tag is possible in the <a href="https://triplydb.com/browse">faceted search</a> for datasets, queries, and
+  stories. <span class="changelog-issues" title="Issue number, to quote when you contact support">#10962</span></li>
+</ul>
+<p><strong>Issues fixed</strong></p>
+<ul>
+<li><span class="changelog-area">Forms</span>In some cases, the UI does not properly show an error message when
+  there is wrong user input.  Users now
+  receive clear feedback when form values are invalid. <span class="changelog-issues" title="Issue number, to quote when you contact support">#11094</span></li>
+<li><span class="changelog-area">SPARQL</span>Fixed an issue <code>SERVICE</code> and some SPARQL functions were not returning the
+  correct results for SPARQL UPDATE queries.</li>
+<li><span class="changelog-area">API</span>Fixed an API validation issue, where requests to create a saved query were wrongly
+  rejected.</li>
+</ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[26.1.200¶]]></title>
